@@ -1,6 +1,6 @@
 ===== Website =====
 
-The JSCAD website can be used immediately by visiting the project website at [[https://www.jscad.xyz | www.jscad.xyz]]
+The JSCAD website can be used immediately by visiting the project website at [[https://www.openjscad.xyz | www.openjscad.xyz]]
 
 This is a great way to learn about JSCAD, view 3D and 2D designs, and create something new. That’s what 3D printing is about!
 
@@ -56,7 +56,7 @@ When you start to edit directly using your browser, the default language is '''J
 
 ==== Install Locally ====
 
-There is no need to install anything. Just jump to the project website at [[http://www.jscad.xyz|www.jscad.xyz]] and start in.
+There is no need to install anything. Just jump to the project website at [[http://www.openjscad.xyz|www.openjscad.xyz]] and start in.
 
 However, for those who want more control, the website can be installed and used locally. The browsers of today can open locally installed or downloaded website content. And that means, you can download the project website, view and explore the contents, read the examples, etc. Here's how.
   - Download ZIP from [[https://github.com/jscad/OpenJSCAD.org|GitHub]]

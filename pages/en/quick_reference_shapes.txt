@@ -8,28 +8,28 @@ const { cube, ellipse, star } = require('@jscad/modeling').primitives
 
 ==== 2D Primitives ====
 ^  Primitive  ^  Notes  ^
-| const mypath = arc({center: [2, 2], radius: 2, startAngle: Math.PI, endAngle: Math.PI * 2, segments: 64})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.arc | API]] |
-| const myshape = circle({center: [6.5, 6.5], radius: 3.5, startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})  | [[en:design_guide_ellipse | User Guide]] [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.circle | API]]  |
-| const myshape = ellipse({center: [6.5, 6.5], radius: [7, 9], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.circle | API]]  |
-| const mypath = line([ [10, 10], [-10, 10] ])  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.line | API]]  |
-| const myshape = polygon({ points: [ [10, 11], [0, 11], [5, 20] ], paths: [0, 1, 2]})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.polygon | API]]  |
-| const myshape = rectangle({center: [6.5, 6.5], size: [10, 20]})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.rectangle | API]]  |
-| const myshape = roundedRectangle({center: [6.5, 6.5], size: [10, 20], roundRadius: 2, segments: 64})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.roundedRectangle | API]]  |
-| const myshape = square({center: [6.5, 6.5], size: 10})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.square | API]]  |
-| const myshape = star({vertices: 8, outerRadius: 10}) /* star with 8/2 density */  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.star | API]]  |
-| const myshape = star({vertices: 12, outerRadius: 40, innerRadius: 20}) /* star with given radius */  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.star | API]]  |
+| const mypath = arc({center: [2, 2], radius: 2, startAngle: Math.PI, endAngle: Math.PI * 2, segments: 64})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.arc | API]] |
+| const myshape = circle({center: [6.5, 6.5], radius: 3.5, startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})  | [[en:design_guide_ellipse | User Guide]] [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.circle | API]]  |
+| const myshape = ellipse({center: [6.5, 6.5], radius: [7, 9], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.circle | API]]  |
+| const mypath = line([ [10, 10], [-10, 10] ])  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.line | API]]  |
+| const myshape = polygon({ points: [ [10, 11], [0, 11], [5, 20] ], paths: [0, 1, 2]})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.polygon | API]]  |
+| const myshape = rectangle({center: [6.5, 6.5], size: [10, 20]})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.rectangle | API]]  |
+| const myshape = roundedRectangle({center: [6.5, 6.5], size: [10, 20], roundRadius: 2, segments: 64})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.roundedRectangle | API]]  |
+| const myshape = square({center: [6.5, 6.5], size: 10})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.square | API]]  |
+| const myshape = star({vertices: 8, outerRadius: 10}) /* star with 8/2 density */  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.star | API]]  |
+| const myshape = star({vertices: 12, outerRadius: 40, innerRadius: 20}) /* star with given radius */  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.star | API]]  |
 
 
 ==== 3D Primitives ====
 ^  Primitive  ^  Notes  ^
-| const myshape = cube({center: [6.5, 6.5, 6.5], size: 7})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.cube | API]]   |
-| const myshape = cuboid({center: [6.5, 6.5, 6.5], size: [3, 5, 7]})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.cuboid | API]]   |
-| const myshape = cylinder({center: [-5, -5, -5], height: 10, radius: 4, segments: 5})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.cylinder | API]]   |
-| const myshape = cylinderElliptic({center: [-5, -5, -5], height: 10, startRadius: [1, 2], endRadius: [2, 1], startAngle: Math.PI / 2, endAngle: Math.PI * 2 * 0.75, segments: 5})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.cylinderElliptic | API]]   |
-| const myshape = ellipsoid({center: [-5, -5, -5], radius: [4, 6, 8], segments: 64})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.ellipsoid | API]]   |
-| const myshape = geodesicSphere({radius: 15, frequency: 18})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.geodesicSphere | API]]   |
-| const myshape = polyhedron({points: mypoints, faces: myfaces, orientation: 'inward'})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.polyhedron | API]]   |
-| const myshape = roundedCuboid({center: [-5, -5, -5], size: [10, 20, 10], roundRadius: 2, segments: 16})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.roundedCuboid | API]]   |
-| const myshape = roundedCylinder({center: [-5, -5, -5], height: 10, radius: 2, roundRadius: 0.5, segments: 16})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.roundedCylinder | API]]   |
-| const myshape = sphere({center: [-5, -5, -5], radius: 5, })  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.sphere | API]]   |
-| const myshape = torus({innerRadius: 10, outerRadius: 100, innerSegments: 32, outerSegments: 8, innerRotation: Math.PI, startAngle: Math.PI})  | [[https://www.jscad.xyz/docs/module-modeling_primitives.html#.torus | API]]   |
+| const myshape = cube({center: [6.5, 6.5, 6.5], size: 7})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.cube | API]]   |
+| const myshape = cuboid({center: [6.5, 6.5, 6.5], size: [3, 5, 7]})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.cuboid | API]]   |
+| const myshape = cylinder({center: [-5, -5, -5], height: 10, radius: 4, segments: 5})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.cylinder | API]]   |
+| const myshape = cylinderElliptic({center: [-5, -5, -5], height: 10, startRadius: [1, 2], endRadius: [2, 1], startAngle: Math.PI / 2, endAngle: Math.PI * 2 * 0.75, segments: 5})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.cylinderElliptic | API]]   |
+| const myshape = ellipsoid({center: [-5, -5, -5], radius: [4, 6, 8], segments: 64})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.ellipsoid | API]]   |
+| const myshape = geodesicSphere({radius: 15, frequency: 18})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.geodesicSphere | API]]   |
+| const myshape = polyhedron({points: mypoints, faces: myfaces, orientation: 'inward'})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.polyhedron | API]]   |
+| const myshape = roundedCuboid({center: [-5, -5, -5], size: [10, 20, 10], roundRadius: 2, segments: 16})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.roundedCuboid | API]]   |
+| const myshape = roundedCylinder({center: [-5, -5, -5], height: 10, radius: 2, roundRadius: 0.5, segments: 16})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.roundedCylinder | API]]   |
+| const myshape = sphere({center: [-5, -5, -5], radius: 5, })  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.sphere | API]]   |
+| const myshape = torus({innerRadius: 10, outerRadius: 100, innerSegments: 32, outerSegments: 8, innerRotation: Math.PI, startAngle: Math.PI})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.torus | API]]   |

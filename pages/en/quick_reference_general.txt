@@ -9,11 +9,11 @@ const { colorize, hexToRgb } = require('@jscad/modeling').colors
 </code>
 
 ^  Function  ^  Notes  ^
-| let newshape = colorize([1, 0, 0], oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.colorize | API]]  |
-| let newshape = colorize(colorNameToRgb('lightblue'), oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.colorNameToRgb | API]]  |
-| let newshape = colorize(hexToRgb('#000080'), oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.hexToRgb | API]]  |
-| let newshape = colorize(hslToRgb([0.9166666666666666, 1, 0.5]), oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.hslToRgb | API]]  |
-| let newshape = colorize(hsvToRgb([0.9166666666666666, 1, 1]), oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.hslToRgb | API]]  |
+| let newshape = colorize([1, 0, 0], oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.colorize | API]]  |
+| let newshape = colorize(colorNameToRgb('lightblue'), oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.colorNameToRgb | API]]  |
+| let newshape = colorize(hexToRgb('#000080'), oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.hexToRgb | API]]  |
+| let newshape = colorize(hslToRgb([0.9166666666666666, 1, 0.5]), oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.hslToRgb | API]]  |
+| let newshape = colorize(hsvToRgb([0.9166666666666666, 1, 1]), oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.hslToRgb | API]]  |
 
 === Utilities ===
 
@@ -24,7 +24,7 @@ const { radToDeg, degToRad } = require('@jscad/modeling').utils
 </code>
 
 ^  Function  ^  Notes  ^
-| let radians = degToRad(90)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.degToRad | API]]  |
-| let degrees = radToDeg(Math.PI)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.radToDeg | API]]  |
-| let segments = radiusToSegments(3.5, 0.1, 0) /* min length */  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.radiusToSegments | API]]  |
-| let segments = radiusToSegments(3.5, 0, Math.PI * 2 / 300) /* min angle */  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.radiusToSegments | API]]  |
+| let radians = degToRad(90)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.degToRad | API]]  |
+| let degrees = radToDeg(Math.PI)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.radToDeg | API]]  |
+| let segments = radiusToSegments(3.5, 0.1, 0) /* min length */  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.radiusToSegments | API]]  |
+| let segments = radiusToSegments(3.5, 0, Math.PI * 2 / 300) /* min angle */  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.radiusToSegments | API]]  |
