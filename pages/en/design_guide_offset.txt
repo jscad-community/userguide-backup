@@ -1,0 +1,22 @@
+==== Offset ====
+
+{{ :wiki:jscad-offset.png?nolink | Offset}}
+
+//Note: The original shape is black.//
+
+Offsetting two or three dimensional shapes can be performed, which maintains a specific ''delta'' distance from the shape. The ''corners'' can be filled with 'edge', 'round", or 'chamfer' edges.
+
+The opposite is also possible by specifying a negative (-) ''delta''.
+
+Defaults:
+  * delta : 1
+  * corners : 'edge'
+  * segments : 16
+
+<code javascript>
+const myshape = offset({corners: 'round'}, shape1)
+const myshape = offset({delta: -2}, shape2)
+const myshape = offset({delta: 2}, shape3)
+</code>
+
+//Note: Offsetting three dimensional shapes NOT possible today. This is a known issue.//

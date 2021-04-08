@@ -1,0 +1,32 @@
+==== Torus ====
+
+A three dimensional shape made by revolving a small circle (inner) along the circumference a bigger circle (outer).
+
+{{ :wiki:mathisfun-torus.svg?nolink | Torus}}
+
+//[[http://www.mathsisfun.com/geometry/torus.html|Learn about torus at MathIsFun.com]]//
+
+A torus is defined as such:
+  * Inner Circle
+    * inner radius
+    * inner rotation before rotating about the outer circle
+    * inner segments
+  * Outer Circle
+    * outer radius
+    * outer segments
+  * Rotation
+    * start angle of rotation
+    * outer rotation
+
+Defaults:
+  * innerRadius : 1
+  * innerRotation : 0
+  * innerSegments : 32
+  * outerRadius : 4
+  * outerSegments : 32
+  * startAngle : 0
+  * outerRotation : PI * 2
+
+<code javascript>
+const myshape = torus({innerRadius: 10, outerRadius: 100})
+</code>

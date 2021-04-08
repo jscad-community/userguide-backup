@@ -1,0 +1,13 @@
+===== Operations =====
+
+All shapes (primitives or the results of operations) can be passed to special functions to perform logical operations, e.g. removing a hole from a board. In all cases, the operation returns the results, and **never** changes the original shapes.
+
+{{page>design_guide_union}}
+
+{{page>design_guide_intersect}}
+
+{{page>design_guide_subtract}}
+
+{{page>design_guide_hull}}
+
+{{page>design_guide_chain_hull}}

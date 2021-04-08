@@ -1,0 +1,29 @@
+==== Rotate ====
+
+Shapes can be rotated by any given angle about the X, Y, and Z axis. The ''angles'' can be specified as either positive or negative values, in RADIANS.
+
+//[[http://www.mathsisfun.com/geometry/rotation.html|Learn about rotation at MathIsFun.com]]//
+
+Defaults:
+  * angles : [0, 0, 0]
+
+<code javascript>
+const myshape = cuboid({size: [5, 20, 5]})
+const newshape = rotate([(Math.PI * 2 / 4), (Math.PI * 2 / 24), (Math.PI * 2 / 12)], myshape)
+</code>
+
+In addition, there are simple versions of the same function for rotating about a single axis.
+
+<code javascript>
+const myshape = cuboid({size: [5, 20, 5]})
+let newshape = rotateX((Math.PI * 2 / 4), myshape)
+newshape = rotateY((Math.PI * 2 / 24), newshape)
+newshape = rotateZ((Math.PI * 2 / 12), newshape)
+</code>
+
+There is a [[en:jscad_design_math|utility function]] to convert DEGREE to RADIAN values.
+
+<code javascript>
+const newshape = rotate([degreeToRad(90), degreeToRad(15), degreeToRad(30)], myshape)
+const newshape = rotateX(degreeToRad(90), myshape)
+</code>

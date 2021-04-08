@@ -1,0 +1,33 @@
+==== Color ====
+
+Shapes can exhibit different colors. And just like the other transformations, adding color to a shape produces a new shape, i.e. one with color.
+
+<code javascript>
+const myshape = colorize([1, 0, 0], sphere()) // RGB red
+const myshape = colorize([1, 0.5, 0.3], sphere()) // color
+const myshape = colorize([1, 0.5, 0.3, 0.6], sphere()) // color plus alpha transparency
+</code>
+
+//Note: There are known issues with transparency, and depending on the order of colors, objects may not seem transparent. Try different 'alpha' values or colors.//
+
+=== Color Space Conversion ===
+
+There are several functions to convert between color spaces, including color names.
+
+<code javascript>
+const wildcylinder = colorize(colorNameToRgb('fuchsia'), cylinder())
+
+const bluesphere = colorize(hexToRgb('#000080'), sphere()) // navy blue
+
+const mysphere = colorize(hslToRgb([0.9166666666666666, 1, 0.5]), sphere())
+
+const mysphere = colorize(hsvToRgb([0.9166666666666666, 1, 1]), sphere())
+</code>
+
+whereas
+  * r,g,b (red, green, blue) of [[https://en.wikipedia.org/wiki/RGB_color_model | RGB color model]]
+  * h,s,l (hue, saturation, lightness) of [[https://en.wikipedia.org/wiki/HSL_and_HSV | HSL color model]]
+  * h,s,v (hue, saturation, value) of [[https://en.wikipedia.org/wiki/HSL_and_HSV | HSV color model]]
+
+See the [[https://www.w3.org/TR/css3-color/#svg-color | Extended Color Keywords]] for all available colors. Color keywords are case-insensitive, e.g. 'RED' is the same as 'red'.
+

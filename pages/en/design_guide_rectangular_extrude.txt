@@ -1,0 +1,18 @@
+==== Rectangular Extrude ====
+
+{{ :wiki:jscad-extruderectangular.png?nolink | Extrude Rectangular}}
+
+Extrude a rectangle (upright, perpendicular) along the outlines of the two dimensional shape.
+
+The two dimensional shape is extruded to the ''height'', upwards along the Z axis.
+
+//Note: The extrusion process uses Linear Extrude underneath, so the extrusion can be rotated ''twistAngle'' about the Z axis during the extrusion, creating ''twistSteps'' during the extrusion.//
+
+Defaults:
+  * size: 1 (width of rectangle during extrusion)
+  * height : 1
+
+<code javascript>
+const myshape = extrudeRectangular({height: radiusZ * 2, size: 0.25}, shape1)
+const myshape = extrudeRectangular({height: radiusZ * 2, size: 3, twistAngle: Math.PI / 2, twistSteps: 10}, shape2)
+</code>

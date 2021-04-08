@@ -1,0 +1,59 @@
+==== Cylinder ====
+
+A three dimensional shape with two flat ends that are circular. The cylinder has the same cross-section from one end to the other, extending about the Z axis.
+
+{{ :wiki:mathisfun-cylinder.svg?nolink | Cylinder}}
+
+//[[http://www.mathsisfun.com/geometry/cylinder.html|Learn about cylinders at MathIsFun.com]]//
+
+The ''radius'' specifies the circular size about the Z axis, while the ''height'' specifies the size. Cylinders can be created at a requested ''center''. The ''segments'' specify the number of segments to create per full rotation. 
+
+Defaults:
+  * radius : 1
+  * height : 2
+  * center : [0, 0, 0]
+  * segments : 32
+
+<code javascript>
+const myshape = cylinder({radius: 5, height: 10})
+const myshape = cylinder({radius: 5, height: 10, center: [5, 5, 5], segments: 64})
+</code>
+
+
+=== Elliptical Cylinder ===
+
+{{ :wiki:jscad-cylinderElliptic.png?nolink | Cylinder Elliptic}}
+
+Various cylindrical shapes can be created using the elliptical cylinder, including cylinders with changing radius (cones).
+
+Defaults:
+  * radius : 1
+  * height : 2
+  * startRadius : [1, 1]
+  * endRadius : [1, 1]
+  * center : [0, 0, 0]
+  * segments : 32
+  * startAngle : 0
+  * endAngle : PI * 2
+
+<code javascript>
+const myshape = cylinderElliptic({height: 2, startRadius: [10, 5], endRadius: [8, 3]})
+</code>
+
+=== Rounded Cylinder ===
+
+{{ :wiki:jscad-roundedCylinder.png?nolink | Rounded Cylinder}}
+
+Cylinders can be created with rounded ends by specifying ''roundRadius''.
+
+Defaults:
+  * radius : 1
+  * height : 2
+  * roundRadius: 0.5
+  * center : [0, 0, 0]
+  * segments : 32
+
+<code javascript>
+const myshape = roundedCylinder({radius: 5, height: 10, roundRadius: 0.5})
+const myshape = roundedCylinder({radius: 5, height: 10, roundRadius: 0.5, center: [5, 5, 5], segments: 64})
+</code>

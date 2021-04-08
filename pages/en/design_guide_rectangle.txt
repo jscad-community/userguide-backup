@@ -1,0 +1,40 @@
+==== Rectangle ====
+
+A two dimensional shape made with four straight sides where all interior angles are right angles (90°).
+
+{{ :wiki:mathisfun-rectangle.png?nolink | Rectangle}}
+
+//[[http://www.mathsisfun.com/geometry/rectangle.html|Learn about rectangles at MathIsFun.com]]//
+
+The ''size'' specifies the size across X and Y axis. Rectangles can be created at a requested ''center''..
+
+Defaults:
+  * size : [2, 2]
+  * center : [0, 0]
+
+<code javascript>
+const myshape = rectangle({size: [3, 4])
+const myshape = rectangle({size: [3, 4], center: [5, 5])
+</code>
+
+=== Square ===
+
+{{ :wiki:mathisfun-square.png?nolink | Square}}
+
+The specialized square primitive also exists, but requires only one number value for all sides.
+
+<code javascript>
+const myshape = square({size: 3)
+const myshape = square({size: 3, center: [5, 5])
+</code>
+
+=== Rounded Rectangle ===
+
+{{ :wiki:jscad-roundedRectangle.svg?nolink | Rectangle}}
+
+Rounded rectangles can be created by specifying a ''roundRadius'' for the corners.
+
+<code javascript>
+const myshape = roundedRectangle({size: [10, 20], roundRadius: 2})
+const myshape = roundedRectangle({size: [10, 20], roundRadius: 2, center: [5, 5], segments: 64})
+</code>

@@ -1,0 +1,11 @@
+===== Expansions =====
+
+The 'expansions' are accessed through the modeling API using the following:
+
+<code javascript>
+const { expand, offset } = require('@jscad/modeling').expansions
+</code>
+
+^  Expansion  ^  Notes  ^
+| const newshape = expand({delta: 2, corners: 'round', segments: 64}, oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.expand | API]]  |
+| const newshape = offset({delta: -4, corners: 'round', segments: 64}, oldshape)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.offset | API]]  |

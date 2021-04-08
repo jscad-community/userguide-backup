@@ -1,0 +1,39 @@
+==== Ellipse ====
+
+{{ :wiki:jscad-ellipse.svg?nolink | Ellipse }}
+
+A two dimensional shape that surrounds two focal points, such that for all points on the curve, the sum of the two distances to the focal points is a constant.
+
+The ''radius'' determines the size of the ellipsoid about X and Y axis. Ellipsoids can be created at a requested ''center''. The ''segments'' specify the number of segments to create per full rotation. 
+
+Defaults:
+  * radius : [1, 1]
+  * center : [0, 0]
+  * startAngle : 0
+  * endAngle : PI * 2
+  * segments: 32
+
+<code javascript>
+const myshape = ellipse({radius: [5, 10]})
+const myshape = circle({radius: [5, 10], center: [5, 5], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})
+</code>
+
+=== Circle ===
+
+A two dimensional shape made by drawing a curve that is always the same distance from a center. All points are the same distance from the center.
+
+{{ :wiki:jscad-circle.svg?nolink | Circle }}
+
+//[[http://www.mathsisfun.com/algebra/circle-equations.html|Learn about circles at MathIsFun.com]]//
+
+The ''radius'' specifies the size across both X and Y axis. Circles can be created at a requested ''center''. The ''segments'' specify the number of segments to create per full rotation. 
+
+Defaults:
+  * radius : 1
+  * center : [0, 0]
+  * segments: 32
+
+<code javascript>
+const myshape = circle({radius: 10})
+const myshape = circle({radius: 10, center: [5, 5], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})
+</code>

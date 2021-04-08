@@ -1,0 +1,9 @@
+==== Intersect ====
+
+{{ :wiki:jscad-intersect.png?nolink | Intersect}}
+
+Several objects can be combined (overlapped) into a single shape. This result is the logical intersection of the shapes.
+
+<code javascript>
+const newshape = intersect(cube({size: 10}), cylinder({radius: 4, heigth: 14})
+</code>

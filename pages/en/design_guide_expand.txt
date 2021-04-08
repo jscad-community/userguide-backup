@@ -1,0 +1,22 @@
+==== Expand ====
+
+{{ :wiki:jscad-expand.png?nolink | Expand}}
+
+//Note: The original shape is black.//
+
+Expanding two or three dimensional shapes can be performed, which maintains a specific ''delta'' distance from the shape. The ''corners'' can be filled with 'edge', 'round", or 'chamfer' edges.
+
+The opposite is also possible by specifying a negative (-) ''delta'', a shape can be contracted.
+
+Defaults:
+  * delta : 1
+  * corners : 'edge'
+  * segments : 16
+
+<code javascript>
+const myshape = expand({corners: 'round'}, shape1)
+const myshape = expand({delta: -2}, shape2)
+const myshape = expand({delta: 2}, shape3)
+</code>
+
+//Note: Expanding three dimensional shapes is very CPU intensive. This is a known issue.//

@@ -1,0 +1,9 @@
+===== Extrusions =====
+
+Extruding a two dimensional shape into a three dimensional shape can be performed in various ways. In each extrusion process, a continuous three dimensional shape is formed with a constant cross section similar to that of the two dimensional shape.
+
+{{page>design_guide_linear_extrude}}
+
+{{page>design_guide_rectangular_extrude}}
+
+{{page>design_guide_rotate_extrude}}

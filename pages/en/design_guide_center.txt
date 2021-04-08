@@ -1,0 +1,25 @@
+==== Center ====
+
+Shapes can be centered about the X, Y or Z axis, or centered at a given ''center'' point.
+
+//Note: The center of a shape is calculated as the midpoint between minimum and maximum points.//
+
+Defaults:
+  * axes : [true, true, true]
+  * center : [0, 0, 0]
+
+<code javascript>
+const myshape = sphere({radius: 5})
+let newshape = center({}, myshape)  // center the shape across all axes
+newshape = center({axes: [true, true, false]}, myshape)  // center the object across only X and Y axis
+newshape = center({center: [5, 6, 7]}, myshape)  // center the shape at the given center point
+</code>
+
+There are also simple versions of this function to center about only one axis about the origin.
+
+<code javascript>
+const myshape = sphere({radius: 5})
+let newshape = centerX(myshape)
+newshape = centerY(newshape)
+newshape = centerZ(newshape)
+</code>

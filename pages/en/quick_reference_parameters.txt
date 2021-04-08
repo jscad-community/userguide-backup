@@ -1,0 +1,61 @@
+==== Design Parameters ====
+A design can have parameters by declaring a special function; getParameterDefinitions().
+
+In applications and browsers, these parameters are presented to users, allowing users to interactively change designs.
+
+=== Usage ===
+This function must return an array of parameter definitions, as show below.
+
+<code javascript>
+const getParameterDefinitions = () => {
+    return [
+        { name: 'length', type: 'int', initial: 150, caption: 'Length?' }, 
+        { name: 'width', type: 'int', initial: 100, caption: 'Width?' },
+    ]
+}
+</code>
+
+The parameters are evaluated and values are passed into the main function. Be sure to declare the main function properly.
+
+<code javascript>
+const main = (params) => {
+  var l = params.length
+  var w = params.width
+...
+}
+</code>
+
+=== Parameter Types ===
+
+The parameters are defined as input fields on a single HTML5 form, i.e. the list of parameters. For more information on HTML5 input fields, see some examples at [[http://www.w3schools.com/html/html_form_input_types.asp|W3 Schools]].
+
+//Note: Browsers are NOT the same and will treat unsupported parameter types as TEXT.//
+
+^  Type  ^  Example  ^  Returned Value  ^
+| checkbox  | {name: 'bigorsmall', type: 'checkbox', checked: true, caption: 'Big?'}  | if checked true, else false  |
+| checkbox  | {name: 'bigorsmall', type: 'checkbox', checked: true, initial: 20, caption: 'Big?'}  | if checked 20, else false   |
+| color  | { name: 'color', type: 'color', initial: '#FFB431', caption: 'Color?' }  | "#rrggbb", use html2rgb() to convert  |
+| date  | {name: 'birthday',  type: 'date', caption: 'Birthday?'}  | "YYYY-MM-DD"  |
+| email  | {name: 'address', type: 'email', caption: 'Email Address?'}  | string value  |
+| float  | {name: 'angle', type: 'number', initial: 2.5, step: 0.5, caption: 'Angle?'}  | float value  |
+| int  | {name: 'age', type: 'int', initial: 20, caption: 'Age?'}  | integer value  |
+| number  | {name: 'angle', type: 'number', initial: 2.5, step: 0.5, caption: 'Angle?'}  | float value  |
+| password  | {name: 'password', type: 'password', caption: 'Secret?'}  | string value  |
+| slider  | {name: 'count', type: 'slider', min: 2, max: 10, caption: 'How many?'}  | float value  |
+| text  | {name: 'name', type: 'text', caption: 'Name?'}  | string value  |
+| url  | {name: 'webpage', type: 'url', caption: 'Web page URL?'}  | string value  |
+| group  | { name: 'balloon', type: 'group', caption: 'Balloons' }  | none, only displayed  |
+
+The parameters accept additional restrictions and assistance. These include 'initial', 'max', 'maxLength', 'min', 'pattern', 'placeholder', 'size', and 'step'.
+
+There is one more special parameter type called 'choice', which defines a list of choices for selection.
+
+<code javascript>
+const getParameterDefinitions = () => {
+  return [
+    { name: 'rounded', type: 'choice', caption: 'Rounded edges', values: [0, 1], captions: ['No', 'Yes (slow!)'], initial: 0 }
+  ]
+}
+</code>
+
+The list of captions are those shown in the HTML form, i.e. pull down list. The list of values define a value for each caption. And, the choosen value passed into the main() function.

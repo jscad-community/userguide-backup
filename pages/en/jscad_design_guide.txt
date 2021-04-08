@@ -1,0 +1,23 @@
+====== Design Guide ======
+
+Creating a new JSCAD design starts by writing simple scripts which call functions to create and manipulate shapes. In general, JSCAD designs are written using the JavaScript language.
+
+//[[https://www.w3schools.com/js/default.asp|Find out more about JavaScript at w3schools]]//
+
+The JSCAD suite of applications executes the script, generates shapes, applies transforms, performs operations, and renders the design for viewing.
+
+{{page>design_guide_anatomy}}
+
+{{page>design_guide_3d_primitives}}
+
+{{page>design_guide_2d_primitives}}
+
+{{page>design_guide_transforms}}
+
+{{page>design_guide_operations}}
+
+{{page>design_guide_conversions}}
+
+{{page>design_guide_expansions}}
+
+{{page>design_guide_attributes}}

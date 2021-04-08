@@ -1,0 +1,25 @@
+===== Shape Operations =====
+
+==== Boolean Operations ====
+
+The 'booleans' are accessed through the modeling API using the following:
+
+<code javascript>
+const { union, intersect, subtract } = require('@jscad/modeling').booleans
+</code>
+
+^  Operation  ^  Notes  ^
+| const newshape = intersect(oldshape0, oldshape1)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.intersect | API]]  |
+| const newshape = subtract(oldshape0, oldshape1)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.subtract | API]]  |
+| const newshape = union(oldshape0, oldshape1)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.union | API]]  |
+==== Hull Operations ===
+
+The 'hulls' are accessed through the modeling API using the following:
+
+<code javascript>
+const { hull, chainHull } = require('@jscad/modeling').hulls
+</code>
+
+^  Operation  ^  Notes  ^
+| const newshape = chainHull(oldshape0, oldshape1)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.chainHull | API]]  |
+| const newshape = hull(oldshape0, oldshape1)  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.hull | API]]  |

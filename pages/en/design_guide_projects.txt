@@ -1,0 +1,30 @@
+==== Projects ====
+
+As designs grow in complexity, the need for smaller, reusable parts becomes apparent. This is the time to consider using a “project”.
+
+Projects are simple directories, containing several files (parts) of the design. For example, a project for a RC car design would have various parts. And the reusable parts can be separated out.
+
+  * .../rc-car
+    * chassis.js
+    * body.js
+    * tire.js
+    * index.js
+
+The 'index' within the project is the entry point of the project. The main function of the 'index' creates each of the pieces, move the pieces into position, and returns the complete design. And by convention, exports the main function.
+
+<code javascript>
+const chassis = require('./chassis')
+const body = require('./body')
+const tire = require('./tire')
+
+const main = (params) => {
+  const partA = chassis(params)
+  const partB = body(params)
+  const tires = [
+    ...
+  ]
+  return [partA, partB, tires]
+}
+
+module.exports = { main }
+</code>

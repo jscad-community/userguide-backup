@@ -1,0 +1,19 @@
+==== Star ====
+
+{{ :wiki:jscad-star.svg?nolink | Star }}
+
+A two dimensional shape made from straight rays extending from a center. All vertices are the same distance from the center.
+
+Note: See the paper on [[http://www.jdawiseman.com/papers/easymath/surds_star_inner_radius.html | The Inner Radius of n/m Stars by Julian D. A. Wiseman]] for more details.
+
+Defaults:
+  * vertices : 5
+  * density : 2
+  * outerRadius : 1
+  * innerRadius : 0
+  * startAngle : 0
+  * center : [0, 0, 0]
+
+<code javascript>
+const myshape = star({vertices: 8, outerRadius: 10})
+</code>

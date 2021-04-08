@@ -1,0 +1,35 @@
+FIXME **このページはまだ完全には、翻訳されません。翻訳の完了を支援して下さい。**\\ //（翻訳が完了したらこの段落を削除して下さい）//
+
+===== Contribute =====
+
+The JSCAD Organization is maintained by a group of volunteers. We welcome and encourage anyone to pitch in but please take a moment to read the following guidelines.
+
+Thank you to all the people who have already contributed to this project:
+
+{{https://opencollective.com/openjscad/contributors.svg}}
+
+  * If you find errors in the documentation then please make changes. You can login using any account at GitHub, and make changes immediately.
+
+  * If you want to submit a bug report please make sure to follow the [[https://github.com/jscad/OpenJSCAD.org/wiki/Reporting-Issues | Reporting Issues]] guide. Bug reports are accepted as [[https://github.com/jscad/OpenJSCAD.org/issues/ | Issues]] via GitHub.
+
+  * If you want to submit a change or a patch, please see the [[https://github.com/jscad/OpenJSCAD.org/blob/master/CONTRIBUTING.md | Contributing]] guidelines. New contributions are accepted as [[https://github.com/jscad/OpenJSCAD.org/pulls/ | Pull Requests]] via GitHub.
+
+  * We only accept bug reports and pull requests on **GitHub**.
+
+  * If you have a question about how to use the OpenJSCAD.org website, JSCAD application, or command line interface then please start a conversation at the [[https://openjscad.nodebb.com/ | JSCAD User Group]].
+
+  * If you have a change or new feature in mind then please start a conversation with the [[https://openjscad.nodebb.com/category/5/development-discussions | Core Developers]] and start contributing changes.
+
+==== Support ====
+
+Sadly, the JSCAD organization doesn't come free. We need financial support from users and organizations. It allows us to maintain the website and makes life easier for everyone. If you cannot contribute then consider supporting JSCAD.
+
+Thank you to all our backers! 🙏 [[https://opencollective.com/openjscad#backer|Become a backer]]
+
+{{https://opencollective.com/openjscad/backers.svg}}
+
+==== Sponsors ====
+
+And if your organization enjoys the benefits of JSCAD then consider supporting us with a monthly contribution. Your logo will show up here with a link to your website. [[https://opencollective.com/openjscad#sponsor|Become a sponsor]]
+
+{{https://opencollective.com/openjscad/sponsor/0/avatar.svg}}

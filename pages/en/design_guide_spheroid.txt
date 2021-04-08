@@ -1,0 +1,53 @@
+==== Ellipsoid ====
+
+A three dimensional surface that has three pairwise perpendicular axes of symmetry which intersect at a center.
+
+{{ :wiki:jscad-ellipsoid.png?nolink | Sphere }}
+
+The ''radius'' determines the size of the ellipsoid about the X, Y, and Z axis. Ellipsoids can be created at a requested ''center''. The ''segments'' specify the number of segments to create per full rotation.
+
+Defaults:
+  * radius : [1, 1, 1]
+  * center : [0, 0, 0]
+  * segments : 32
+
+<code javascript>
+const myshape = ellipsoid({radius: [5, 10, 20]})
+const myshape = ellipsoid({radius: [5, 10, 20], center: [5, 5, 5], segments: 64})
+</code>
+
+=== Sphere ===
+
+A three dimensional shape like a ball, where every point on the surface is the same distance from the center.
+
+{{ :wiki:jscad-sphere.png?nolink | Sphere }}
+
+//[[http://www.mathsisfun.com/geometry/sphere.html|Learn about spheres at MathIsFun.com]]//
+
+The ''radius'' determines the size of the sphere. Spheres can be created at a requested ''center''. The ''segments'' specify the number of segments to create per full rotation.
+
+Defaults:
+  * radius : 1
+  * center : [0, 0, 0]
+  * segments : 32
+
+<code javascript>
+const myshape = sphere({radius: 3.5})
+const myshape = sphere({radius: 3.5}, center: [5, 5, 5], segments: 64)
+</code>
+
+=== Geodesic Sphere ===
+
+{{ :wiki:jscad-geodesicSphere.png?nolink | Geodesic Sphere }}
+
+A three dimensional shape formed by a convex polyhedron consisting of triangles. The base form is the icosahedron polyhedron with 20 faces. 
+
+The ''radius'' determines the size of the sphere. The ''frequency'' specifies the division of each face. A frequency of one (1) reveals the base form, icosahedron.
+
+Defaults:
+  * radius : 1
+  * frequency : 6
+
+<code javascript>
+const myshape = geodesicSphere({radius: 15, frequency: 18}) // frequency should be a multiple of 6
+</code>

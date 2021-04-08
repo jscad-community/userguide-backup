@@ -1,0 +1,16 @@
+==== Rotate Extrude ====
+
+{{ :wiki:jscad-extruderotate.png?nolink | Extrude Rotate}}
+
+Extrude a two dimensional shape in a rotation about the Z axis. The two dimensional shape can be placed anywhere to create various three dimensional shapes. The ''segments'' specify the number of segments to create per full rotation. 
+
+Defaults:
+  * startAngle : 0
+  * angle: PI * 2
+  * overflow: 'cap' (cap the ends in order to create a solid)
+  * segments: 12
+
+<code javascript>
+const myshape = extrudeRotate({segments: 64}, shape1)
+const myshape = extrudeRotate({segments: 8, angle: Math.PI startAngle: 0}, shape3)
+</code>

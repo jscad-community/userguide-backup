@@ -1,0 +1,13 @@
+==== Align ====
+
+Shapes can be aligned across X, Y, and Z axis. In other words, each shape is translated to the requested position, aligning the boundaries of the shapes. The ''modes'' of alignment control which position to use, with values 'center', 'min', 'max', or 'none'. The alignment can also be positioned to a specific point, ''alignTo''.
+
+Defaults:
+  * modes : ['center', 'center', 'min']
+  * group : false (do not align all shapes as a group)
+  * alignTo : [0, 0, 0]
+
+<code javascript>
+const newshapes = align({modes: ['min', 'none', 'none'], myshape1, myshape2, myshape3) // align shapes at the minimum X
+const newshapes = align({modes: ['min', 'center', 'none'], alignTo: [10, null, 10], grouped: true}, myshape1, myshape2, myshape3)
+</code>

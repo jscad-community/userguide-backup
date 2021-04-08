@@ -1,0 +1,54 @@
+===== Anatomy of a Design =====
+
+A JSCAD design (script) must have at least one function defined, the **main()** function, which must to return a shape.
+
+<code javascript>
+const { sphere } = require('@jscad/modeling').primitives
+
+const main = () => {
+  return sphere() // a single shape
+}
+
+module.exports = { main }
+</code>
+
+Or an array of shapes.
+
+<code javascript>
+const { cube, cylinder, sphere } = require('@jscad/modeling').primitives
+
+const main () => {
+  const a = cube()
+  const b = sphere()
+  const c = cylinder()
+  return [a,b,c] // an array of shapes
+}
+
+module.exports = { main }
+</code>
+
+In addition, functions can be created to split the design into managable pieces, i.e. parts, etc.
+
+<code javascript>
+const { cube, sphere } = require('@jscad/modeling').primitives
+
+const partA = (options) => { // called from main() below
+  var shapes = []
+  shapes.push( sphere() )
+  shapes.push( cube(options) )
+  return shapes
+}
+
+const main = () => {
+  let list = partA({radius: 10})
+  return list
+}
+
+module.exports = { main }
+</code>
+
+{{page>design_guide_parameters}}
+
+{{page>design_guide_projects}}
+
+{{page>quick_reference_parameters}}

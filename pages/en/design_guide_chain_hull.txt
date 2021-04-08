@@ -1,0 +1,9 @@
+==== Hull Chain ====
+
+{{ :wiki:jscad-hullchain.png?nolink | Hull Chain}}
+
+Hull chain is a variant of 'hull' essentially sequential hulling each pair of shapes, then creating a union of the results.
+
+<code javascript>
+const newshape = hullChain(shape1, shape2, shape3)
+</code>

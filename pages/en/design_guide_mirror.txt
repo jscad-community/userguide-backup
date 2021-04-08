@@ -1,0 +1,23 @@
+==== Mirror ====
+
+Shapes can mirror (reflect) about the X, Y, or Z axis, and more specifically about any ''origin''.
+
+//[[http://www.mathsisfun.com/geometry/reflection.html|Learn about reflection at MathIsFun.com]]//
+
+Defaults:
+  * origin : [0, 0, 0]
+  * normal : [0, 0, 1] (mirror about the Z axis)
+
+<code javascript>
+const myshape = cube({size: [5, 20, 5]})
+const newshape = mirror({origin: 3, 3, 3], normal: [1, 0, 1]}, myshape)
+</code>
+
+There are simple versions of this function to mirror a single axis about the origin.
+
+<code javascript>
+const myshape = cube({size: [5, 20, 5]})
+let newshape = mirrorX(myshape)
+newshape = mirrorY(newshape)
+newshape = mirrorZ(newshape)
+</code>

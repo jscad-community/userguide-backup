@@ -1,0 +1,11 @@
+==== Subtract ====
+
+{{ :wiki:jscad-subtract.png?nolink | Subtract}}
+
+Several shapes can be removed (subtracted) from another. The result is the logical difference of shapes.
+
+//Note: The first shape given is the base shape for all subtractions.//
+
+<code javascript>
+const newshape = subtract(cube({size: 10}), cylinder({radius: 4, heigth: 14})
+</code>

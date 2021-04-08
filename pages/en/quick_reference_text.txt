@@ -1,0 +1,11 @@
+==== Text ====
+
+The 'text' functions are accessed through the modeling API using the following:
+
+<code javascript>
+const { vectorChar, vectorText } = require('@jscad/modeling').text
+</code>
+
+^  Function  ^  Notes  ^
+| let vectorCharObject = vectorChar({ xOffset: 10, yOffset: 50, height: 18, input: '!' })  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.vectorChar | API]]  |
+| let vectorCharObject = vectorText({ xOffset: 10, yOffset: 50, height: 18, input: 'line1\nline2' })  | [[https://www.jscad.xyz/docs/module-modeling_transforms.html#.vectorText | API]]  |

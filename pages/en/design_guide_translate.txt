@@ -1,0 +1,22 @@
+==== Translate ====
+
+Shapes can be translated (moved) to another location. In other words, every point in the shape is moved by a fixed distance as given by the ''offset''. The ''offset'' can be positive or negative.
+
+//[[http://www.mathsisfun.com/geometry/translation.html|Learn about translation at MathIsFun.com]]//
+
+Defaults:
+  * offset : [0, 0, 0]
+
+<code javascript>
+const myshape = sphere([radius: 5})
+const newshape = translate([3, 7, -10], myshape)
+</code>
+
+In addition, there are simple versions of the same function for translating about a single axis.
+
+<code javascript>
+const myshape = sphere([radius: 5})
+let newshape = translateX(3, myshape)
+newshape = translateY(7, newshape)
+newshape = translateZ(-10, newshape)
+</code>

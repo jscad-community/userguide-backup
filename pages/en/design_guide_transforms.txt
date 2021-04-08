@@ -1,0 +1,57 @@
+===== Transforms =====
+
+All shapes can be transformed, i.e. translated to another location, rotated by certain angles, etc. In all cases, the transform function returns a **new shape**, not the original.
+
+<code javascript>
+const myshape = circle({radius: 5})
+const newshape = scale([5, 10], circleA) // a new cicle, scaled as requested
+</code>
+
+So, in order to modify the original, place the original on the left-hand side of the expression.
+
+<code javascript>
+let myshape = circle({radius: 5})
+myshape = scale([5, 10], myshape) // a new circle, scaled as requested, reassigned to the original
+</code>
+
+In fact, the two lines above can be combined into a single line.
+
+<code javascript>
+let myshape = scale([5, 10]). circle({radius: 5})) // a new circle, and scaled as requested
+</code>
+
+Transforms can also be chained together, but keep in mind that the order of transforms is important.
+
+<code javascript>
+let myshape = scale([5, 10]). circle({radius: 5}))
+myshape = translate([0, 0, 10]), rotateX(45, myshape))
+</code>
+
+The original shape can be transformed any number of times. For example, the same cylinder can be rotated, making copies of the cylinders, and then unioned together. This is a common pattern when creating complex designs.
+
+The transforms return a single shape or an array of shapes depending on the given shapes.
+
+<code javascript>
+const newshape = align({modes: ['none', 'center', 'none']}, oldshape)  /* Returns a single shape */
+const newshapes = align({modes: ['min', 'center', 'none'], alignTo: [10, null, 10], grouped: true }, oldshape, [oldshape0, oldshape1])  /* Returns an array of new shapes*/
+</code>
+
+==== Orientation ====
+
+The standard for all 3D systems today, including graphics cards, design tools, etc. is orientating shapes using the right-hand rule. JSCAD follows the same rules internally, and produces shapes, applies transforms, etc. using the right-hand rule of orientation.
+
+//[[https://en.wikipedia.org/wiki/Right-hand_rule|Learn about the right-hand rule at Wikipedia.org]]//
+
+{{page>design_guide_rotate}}
+
+{{page>design_guide_scale}}
+
+{{page>design_guide_translate}}
+
+{{page>design_guide_align}}
+
+{{page>design_guide_center}}
+
+{{page>design_guide_mirror}}
+
+{{page>design_guide_transform}}

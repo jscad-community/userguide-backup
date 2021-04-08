@@ -1,0 +1,7 @@
+==== Measurements ====
+
+something
+
+=== Bounds ===
+
+The getBounds function can be used to retrieve the bounding box of an object, returning an array with two points specifying the minimum and maximum coordinates, i.e. X, Y, Z values.

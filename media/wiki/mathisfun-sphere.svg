@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" version="1.1">
+<defs>
+<marker id="id10" style="overflow:visible;" orient="auto">
+<path transform="matrix(-0.4,0,0,-0.4,-4,0)" style="fill:black; stroke:black; stroke-width:1pt;" d="M 0,0 5,-5 -12.5,0 5,5 Z"/>
+</marker>
+<radialGradient id="id6" r="28.8845" fx="194.079" fy="26.2933" cx="194.1" cy="26.3" gradientTransform="matrix(-1.01786,0,0,-1.18241,391.624,74.3887)" xlink:href="#id1" gradientUnits="userSpaceOnUse"/>
+<linearGradient id="id1">
+<stop offset="0" style="stop-color:white; stop-opacity:1;"/>
+<stop offset="1" style="stop-color:white; stop-opacity:0;"/>
+</linearGradient>
+<filter id="id7" x="-0.147485" y="-0.132816" width="1.29497" height="1.26563">
+<feGaussianBlur stdDeviation="3.41418"/>
+</filter>
+<radialGradient id="id8" r="28.8845" fx="180.725" fy="38.5941" cx="180.7" cy="38.6" gradientTransform="matrix(0.162441,2.10673,-1.69092,0.262658,228.263,-371.43)" xlink:href="#id2" gradientUnits="userSpaceOnUse"/>
+<linearGradient id="id2">
+<stop offset="0" style="stop-color:white; stop-opacity:0.87;"/>
+<stop offset="1" style="stop-color:white; stop-opacity:0;"/>
+</linearGradient>
+<linearGradient id="id9" xlink:href="#id1" x1="182" y1="36.4" x2="183.3" y2="53.9" gradientUnits="userSpaceOnUse"/>
+<filter id="id5" x="-0.222691" y="-0.217553" width="1.44538" height="1.43511">
+<feGaussianBlur stdDeviation="5.31827"/>
+</filter>
+<radialGradient id="id3" r="28.8845" fx="180.725" fy="38.5941" cx="180.7" cy="38.6" gradientTransform="matrix(0.162441,2.10673,-1.69092,0.262658,228.263,-371.43)" xlink:href="#id2" gradientUnits="userSpaceOnUse"/>
+<linearGradient id="id4" xlink:href="#id1" x1="182" y1="36.4" x2="183.3" y2="53.9" gradientUnits="userSpaceOnUse"/>
+</defs>
+<g transform="translate(184.929,-516.469)">
+<circle cx="-94.6" cy="607.5" r="78.1816" style="fill:#204a87; stroke-width:3.38;"/>
+<ellipse cx="-275.7" cy="580.5" rx="77.9" ry="36.1" transform="matrix(0.980498,-0.196527,0.30258,0.953124,0,0)" style="color:black; overflow:visible; fill:#0084c8; fill-opacity:0.63; stroke-width:4.98;"/>
+<circle cx="193.6" cy="56.5" r="28.8845" transform="matrix(-0.553238,-0.857699,-0.858752,0.833804,110.69,744.235)" style="fill:url(#id3); filter:url(#id5); stroke:url(#id4); stroke-width:0.82;"/>
+<circle cx="193.6" cy="56.5" r="28.8845" transform="matrix(-1.50971,0.661769,-0.483695,-1.10347,208.769,473.649)" style="fill:url(#id6); filter:url(#id7); stroke-width:1.25;"/>
+<path style="color:black; overflow:visible; fill:#19aeff; stroke-width:5.3;" d="m -17.5,594 -0.5,0 a 35.8,77.9 80.4 0 1 -65.7,47.9 35.8,77.9 80.4 0 1 -87.2,-19.1 35.8,77.9 80.4 0 1 -0.4,-1.8 l -0.5,0 a 78.3,78.3 0 0 0 77.1,64.7 78.3,78.3 0 0 0 78.3,-78.3 78.3,78.3 0 0 0 -1.2,-13.6 z"/>
+<circle cx="193.6" cy="56.5" r="28.8845" transform="matrix(-1.04878,0.664922,-0.462655,-0.52887,162.624,555.956)" style="fill:url(#id8); filter:url(#id5); stroke:url(#id9); stroke-width:0.82;"/>
+<path style="marker-end:url(#id10); fill:none; stroke:black; stroke-width:1.27;" d="m -94.6,607.5 72.7,-13.5"/>
+<text x="-71.8" y="597.4" style="font-family:'Comic Sans MS'; font-size:24.7px; font-style:italic; color:black; overflow:visible; fill:black; stroke-width:1.24px;">r</text>
+<circle cx="-94.8" cy="607.5" r="2.12642" style="color:black; overflow:visible; fill:white; stroke:black; stroke-width:2;"/>
+</g>
+<g transform="translate(184.929,-516.469)"/>
+</svg>

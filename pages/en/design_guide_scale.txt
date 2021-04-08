@@ -1,0 +1,22 @@
+==== Scale ====
+
+Shapes can be scaled by any factor, enlarging (increasing) or shrinking (diminishing) shapes by the ''factors'' about X, Y, and Z axis. The result of scaling is a similar shape (in the geometric sense) to the original.
+
+//[[https://en.wikipedia.org/wiki/Scaling_(geometry)|Learn about the scaling shapes at Wikipedia.org]]//
+
+Defaults:
+  * factors : [1.0, 1.0, 1.0]
+
+<code javascript>
+const myshape = sphere({radius: 5})
+const newshape = scale([2, 4, 6], myshape)
+</code>
+
+In addition, there are simple versions of the same function for scaling about a single axis.
+
+<code javascript>
+const myshape = sphere({radius: 5})
+let newshape = scaleX(2, myshape)
+newshape = scaleY(4, newshape)
+newshape = scaleZ(6, newshape)
+</code>

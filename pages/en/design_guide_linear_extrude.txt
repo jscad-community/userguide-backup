@@ -1,0 +1,19 @@
+==== Linear Extrude ====
+
+{{ :wiki:jscad-extrudelinear.png?nolink | Extrude Linear}}
+
+Extrude a two dimensional shape in an upward linear direction.
+
+The two dimensional shape is extruded to the ''height'', upwards along the Z axis. The two dimensional shape is be rotated ''twistAngle'' about the Z axis during the extrusion, creating ''twistSteps'' during the extrusion.
+
+//Note: The two dimensional shape can be placed anywhere to create various twisted shapes.//
+
+Defaults:
+  * height : 1
+  * twist : 0
+  * twistSteps : 1 
+
+<code javascript>
+const myshape = extrudeLinear({height: radiusZ * 2}, shape1)
+const myshape = extrudeLinear({height: radiusZ * 2, twistAngle: Math.PI / 2, twistSteps: 10}, shape2)
+</code>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+<svg xmlns="http://www.w3.org/2000/svg" width="211.8" height="225.4" version="1.1">
+<defs>
+<marker id="id01" style="overflow:visible;" orient="auto">
+<path transform="matrix(.8 0 0 .8 10 0)" style="stroke:black; stroke-width:1pt;" d="m0 0 5-5-17.5 5 17.5 5-5-5z"/>
+</marker>
+</defs>
+<g transform="matrix(.2702 0 0 .2702 5.776 -34.05)">
+<path transform="matrix(1.174,0,0,1.174,-103.5,-137.9)" style="fill:#fce94f; fill-opacity:0.16; stroke:#993300; stroke-width:4.43;" d="m399.6 269.8c-88 0.6-174.7 38.5-235.1 102.1-60.5 62.5-94.6 149.7-92.2 236.8 1.4 89.3 41.3 176.9 107.2 236.8 63.8 59.3 152 91.6 239.2 87.2 89.7-3.4 176.8-45.8 235.3-113.6 57.5-65.3 87.2-154 80.8-241-5.7-87-47.9-170.7-113.9-227.5-60.6-52.8-140.8-82.2-221.3-80.8z"/>
+<path style="marker-start:url(#id01); opacity:0.7; fill:none; stroke:black; stroke-width:4; stroke-dasharray:12, 4;" d="m651.6 321.3-281.7 245.7"/>
+<text x="144" y="584.3" transform="rotate(-.3025)" style="font-family:Comic Sans MS; font-size:65.2px; color:black; opacity:0.66; fill:#6600cc;">Center</text>
+<text x="-37.4" y="655.2" transform="rotate(-42.62)" style="font-family:Comic Sans MS; font-size:65.2px; color:black; opacity:0.66; fill:black;">Radius</text>
+<path transform="matrix(.02131 0 0 .02131 361.9 555.2)" style="fill:white; stroke:#6850e5; stroke-width:281.6;" d="m399.6 269.8c-88 0.6-174.7 38.5-235.1 102.1-60.5 62.5-94.6 149.7-92.2 236.8 1.4 89.3 41.3 176.9 107.2 236.8 63.8 59.3 152 91.6 239.2 87.2 89.7-3.4 176.8-45.8 235.3-113.6 57.5-65.3 87.2-154 80.8-241-5.7-87-47.9-170.7-113.9-227.5-60.6-52.8-140.8-82.2-221.3-80.8z"/>
+<g transform="translate(1538,-118.8)">
+<text x="-1202.4" y="-996.2" transform="rotate(-56.02)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">C</text>
+<text x="-1309.6" y="-790.9" transform="rotate(-46.56)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">i</text>
+<text x="-1305.8" y="-758.2" transform="rotate(-45.16)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">r</text>
+<text x="-1281.8" y="-749.5" transform="rotate(-44.92)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">c</text>
+<text x="-1321.7" y="-610.2" transform="rotate(-38.87)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">u</text>
+<text x="-1358.9" y="-423" transform="rotate(-30.86)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">m</text>
+<text x="-1325.9" y="-353.1" transform="rotate(-27.91)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">f</text>
+<text x="-1339.3" y="-170.5" transform="matrix(.939 -.3438 .3438 .939 0 0)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">e</text>
+<text x="-1287.1" y="32.9" transform="rotate(-11.21)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">e</text>
+<text x="-1236.3" y="199.8" transform="rotate(-3.544)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">n</text>
+<text x="-1187.3" y="273.4" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">c</text>
+<text x="-1147.2" y="276.3" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">e</text>
+<text x="-1304.2" y="-146.9" transform="rotate(-19.1)" style="font-family:Comic Sans MS; font-size:55.1px; color:black; fill:#993300;">r</text>
+</g>
+</g>
+</svg>

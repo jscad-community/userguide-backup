@@ -1,0 +1,50 @@
+==== Cuboid ====
+
+A three dimensional shape created from six retangular faces, each at right angles to another, and opposite faces are equal.
+
+{{ :wiki:mathisfun-cuboid.svg?nolink | Cuboid}}
+
+//[[http://www.mathsisfun.com/geometry/cuboids-rectangular-prisms.html|Learn about cuboids at MathIsFun.com]]//
+
+The ''size'' specifies the size of each face spanning X, Y and Z axis. Cuboids can be created at a requested ''center''.
+
+Defaults:
+  * size : [2, 2, 2]
+  * center : [0, 0, 0]
+
+<code javascript>
+const myshape = cuboid({size: [1, 2, 3]})
+const myshape = cuboid({size: [1, 2, 3], center: [4, 5, 6]})
+</code>
+
+=== Cube ===
+
+{{ :wiki:jscad-cube.png?nolink | Cube}}
+
+The **cube** is a special case of the cuboid in which all six faces are squares.
+
+Defaults:
+  * size : 2
+  * center : [0, 0, 0]
+
+<code javascript>
+const myshape = cube({size: 3})
+const myshape = cube({size: 3, center: [4, 5, 6]})
+</code>
+
+=== Rounded Cuboid ===
+
+{{ :wiki:jscad-roundedCuboid.png?nolink | Rounded Cuboid}}
+
+Rounded cuboids can be created by specifying a ''roundRadius'' for the corners.
+
+Defaults:
+  * size : [2, 2, 2]
+  * center : [0, 0, 0]
+  * roundRadius : 0.2
+  * segments : 32
+
+<code javascript>
+const myshape = roundedCuboid({size: [1, 2, 3], roundRadius: 0.25})
+const myshape = roundedCuboid({size: [1, 2, 3], roundRadius: 0.25, center: [4, 5, 6], segments: 32})
+</code>

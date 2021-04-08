@@ -1,0 +1,17 @@
+==== Polygon ====
+
+A two dimensional shape with straight sides, and the shape is "closed" (all the sides connect up).
+
+{{:wiki:mathisfun-polygon-1.png?nolink|Polygons}}{{:wiki:mathisfun-polygon-2.png?nolink|Polygons}}
+
+//[[http://www.mathsisfun.com/geometry/polygons.html|Learn about polygons at MathIsFun.com]]//
+
+The following show examples of creating polygons from a list of points.
+
+Defaults:
+  * empty
+
+<code javascript>
+const myshape = polygon([ [0,0],[3,0],[3,3] ])
+const myshape = polygon({ points: [ [0,0],[3,0],[3,3] ] })
+</code>

@@ -1,0 +1,79 @@
+===== Website =====
+
+The JSCAD website can be used immediately by visiting the project website at [[https://www.jscad.xyz | www.jscad.xyz]]
+
+This is a great way to learn about JSCAD, view 3D and 2D designs, and create something new. That’s what 3D printing is about!
+
+==== Viewing Designs ====
+
+The website presents a page with three areas.
+  - Viewer
+  - Editor
+  - Info Panel
+
+The initial design is the JSCAD logo, which is created from the contents of the script shown in the editor.
+
+{{ :wiki:jscad_website_01.mp4 |Initial View}}
+
+The view can be rotated, zoomed in or out, and moved by using the mouse buttons. (Or fingers if using a tablet or mobile phone.)
+
+If you need a few pointers then click on the left hand tab, which will make the info panel visible. There’s a short help section on keystrokes and mouse functions.
+
+The editor can be hidden or shown by clicking on the right hand tab.
+
+//Note: Special keystrokes must be performed while using the editor.//
+
+There’s not much else to learn, as you are already using JSCAD. You may want to try a few of the examples, which can be found by clicking on //Examples// in the info panel.
+
+==== Making Changes ====
+
+When browsing examples, the contents of the editor panel will also change. These are the actual designs, which were created by writing JSCAD scripts. The design can be changed by opening the editor, and changing any of the values, etc.
+
+Try it out. In the first example, change line 18. Update scale(10) to scale(5). Then hit RETURN+SHIFT.
+
+//Note: If the page fails to respond due to errors, just reload the website using your browser.//
+
+Some of the examples show a small panel on the lower left, which allows changes to the design parameters. For example, the example called "Interactive Params: Servo Motor" allows different values for "Show plate". Change that to "No" then hit the Update button.
+
+{{ :wiki:jscad_website_02.mp4 |}}
+
+**This is a unique feature of designs written in JSCAD. Any number of designs can be created by simply changing parameters.**
+
+Take the "Interactive Params: Gear" example for a spin. Its really impressive, and fun.
+
+  * creating new designs
+
+==== More Things ====
+
+  * Use your favorite editor
+  * Exporting designs
+  * Importing other designs
+  * Sharing designs
+
+The format of a file is determined from the file extension when importing designs, For example, JSCAD designs are stored as files with the .jscad file extension.
+
+When you start to edit directly using your browser, the default language is '''JSCAD'''.
+
+==== Install Locally ====
+
+There is no need to install anything. Just jump to the project website at [[http://www.jscad.xyz|www.jscad.xyz]] and start in.
+
+However, for those who want more control, the website can be installed and used locally. The browsers of today can open locally installed or downloaded website content. And that means, you can download the project website, view and explore the contents, read the examples, etc. Here's how.
+  - Download ZIP from [[https://github.com/jscad/OpenJSCAD.org|GitHub]]
+  - Place the ZIP file into a directory
+  - Unzip the contents
+  - Open the folder called OpenJSCAD.org-master
+  - Then open index.html which is found in packages/web
+
+For those with a little more technical background, the download can be down from the command line.
+  - cd <base directory>
+  - git clone https://github.com/jscad/OpenJSCAD.org.git
+  - cd OpenJSCAD.org
+
+install dependencies npm install
+if desired, make the openjscad command refer to the code in this folder: npm link
+if desired, start dev server: npm run start-dev
+
+==== Integrate into a Website ====
+
+The website can be integrated into an existing website.

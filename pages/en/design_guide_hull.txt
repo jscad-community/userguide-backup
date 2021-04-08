@@ -1,0 +1,11 @@
+==== Hull ====
+
+{{ :wiki:jscad-hull.png?nolink | Hull}}
+
+Several shapes can be combined together to form the convex hull, i.e. sum of the outside shells. This includes irregular shapes such as combining a circle with a square.
+
+//[[https://en.m.wikipedia.org/wiki/Convex_hull|Learn more about convex hull at Wikipedia.org]]//
+
+<code javascript>
+const newshape = hull(shape1, shape2, shape3)
+</code>

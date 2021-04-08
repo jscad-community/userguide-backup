@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by JSCAD SVG Serializer -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg width="58.6667mm" height="31.3333mm" viewBox="0 0 58.6667 31.3333" version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path fill-rule="evenodd" fill="none" stroke="rgb(99,40,137,255)" d="M56.6667 5.4167L56.601 4.7501L56.4066 4.1092L56.0909 3.5185L55.6659 3.0007L55.1482 2.5758L54.5575 2.2601L53.9166 2.0657L53.25 2L5.4167 2L4.7501 2.0657L4.1092 2.2601L3.5185 2.5758L3.0007 3.0007L2.5758 3.5185L2.2601 4.1092L2.0657 4.7501L2 5.4167L2 25.9167L2.0657 26.5832L2.2601 27.2242L2.5758 27.8149L3.0007 28.3326L3.5185 28.7575L4.1092 29.0733L4.7501 29.2677L5.4167 29.3333L53.25 29.3333L53.9166 29.2677L54.5575 29.0733L55.1482 28.7575L55.6659 28.3326L56.0909 27.8149L56.4066 27.2242L56.601 26.5832L56.6667 25.9167L56.6667 5.4167"/>
+  </g>
+  <g>
+    <path stroke="rgb(99,40,137,255)" stroke-width="0.25" d="M0 15.6667L4 15.6667"/>
+  </g>
+  <g>
+    <path stroke="rgb(99,40,137,255)" stroke-width="0.25" d="M54.6667 15.6667L58.6667 15.6667"/>
+  </g>
+  <g>
+    <path stroke="rgb(99,40,137,255)" stroke-width="0.25" d="M28.3333 4L28.3333 0"/>
+  </g>
+  <g>
+    <path stroke="rgb(99,40,137,255)" stroke-width="0.25" d="M30.3333 4L30.3333 0"/>
+  </g>
+  <g>
+    <path stroke="rgb(99,40,137,255)" stroke-width="0.25" d="M28.3333 31.3333L28.3333 27.3333"/>
+  </g>
+  <g>
+    <path stroke="rgb(99,40,137,255)" stroke-width="0.25" d="M30.3333 31.3333L30.3333 27.3333"/>
+  </g>
+</svg>

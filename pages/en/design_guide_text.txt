@@ -1,0 +1,85 @@
+==== Text ====
+
+Text can be used in designs to create the outline of charaters, which can then be used to create either 2D or 3D shapes.
+
+//NOTE: Only the ASCII characters can be used today.//
+
+=== Single Characters ===
+
+A single character can be converted into an outline, i.e. an array of line segments. The character ''height'' as well as the character position can be requested by specifying options. Note: The ''height'' is the height of UPPERCASE characters.
+
+Defaults:
+  * xOffset : 0
+  * yOffset : 0
+  * height : 21
+  * extrudeOffset : 0
+  * font : 'hershey simplex' (built in)
+
+<code javascript>
+const outlines = vectorChar('H');
+const outlines = vectorChar({ height: 50 }, 'i');
+</code>
+
+The above examples only create the outlines of the character. In order to convert to something useful, the following can be used to convert the outlines (segments) into paths.
+
+<code javascript>
+const segmentToPath = (segment) => {
+  return geometries.path2.fromPoints({close: false}, segment)
+}
+
+const paths = outlines.segments.map((segment) => segmentToPath(segment))
+</code>
+
+And of course, the paths can be used to create additional shapes, including 3D shapes of the characters.
+
+=== Text Strings ===
+
+In addition to single characters, complete text strings can be converted to a series of outlines, i.e. line segments. Text can be split into multiple lines by including '\n'. And of course, text can be aligned and spaced by specifying options.
+
+Defaults:
+  * xOffset : 0
+  * yOffset : 0
+  * height : 21
+  * lineSpacing = 1.4
+  * letterSpacing = 1
+  * align = 'left'
+  * extrudeOffset : 0
+  * font : 'hershey simplex' (built in)
+
+<code javascript>
+const outlines = vectorText('JSCAD');
+const outlines = vectorText({ yOffset: -90, height: 10, extrudeOffset: 2, input: 'JSCAD is awesome!' });
+const outlines = vectorText({ height: 25, align: 'right', lineSpacing: 2.2, extrudeOffset: 2 }, 'JSCAD\nRocks!!');
+</code>
+
+=== Using Other Fonts ===
+
+The default font ([[http://paulbourke.net/dataformats/hershey/|hershey simplex]]) was provided from the [[https://github.com/lautr3k/jscad-vector-fonts | JSCAD Vector Font project]]. This project includes several 'compiled' fonts that can be used immediately, as well as a utility to convert singe-line fonts.
+
+Once the custom 'compiled' font is availabe, here are the steps to use it.
+
+  - Create a new project
+  - Copy the custom 'compiled' font into the project
+  - Require the custom font inside the project design
+  - Specify the 'font' in the options to vectorChar() or vectorText()
+
+<code javascript>
+const { path2 } = require('@jscad/modeling').geometries
+const { vectorText } = require('@jscad/modeling').text
+
+const myfont = require('./fonts/vector/cncVector') // CUSTOM FONT
+
+const segmentToPath = (segment) => {
+  return path2.fromPoints({close: false}, segment)
+}
+
+const main = () => {
+  const outlines = vectorText({height: 42, align: 'right', font: myfont}, 'JSCAD\nROCKS!!')
+  const paths = outlines.map((segment) => segmentToPath(segment))
+  return paths
+}
+
+module.exports = {main}
+</code>
+
+**//Special Note: These fonts are 'single-line' fonts, NOT TrueType fonts. There are libraries that create outlines from TrueType (and other) fonts.//**
