@@ -14,7 +14,7 @@ Thank you to all the people who have already contributed to this project:
 
   * We only accept bug reports and pull requests on **GitHub**.
 
-  * If you have a question about how to use the OpenJSCAD.org website, JSCAD application, or command line interface then please start a conversation at the [[https://openjscad.nodebb.com/ | JSCAD User Group]].
+  * If you have a question about how to use the OpenJSCAD.org website, JSCAD application, or command line interface then please start a conversation at the [[https://openjscad.xyz/forum.html | JSCAD User Group]].
 
   * If you have a change or new feature in mind then please start a conversation with the [[https://openjscad.nodebb.com/category/5/development-discussions | Core Developers]] and start contributing changes.
 

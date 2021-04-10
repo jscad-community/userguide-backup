@@ -8,12 +8,12 @@ JSCAD provides
   * ability to save 3D models as STL (and other) formats
 
 JSCAD is available as
-  * [[http://www.openjscad.xyz|Website]] for quickly creating models
+  * [[http://www.openjscad.xyz | Website]] for quickly creating models
   * Command Line utility for complex projects and file format conversions
-  * [[https://github.com/jscad|Libraries and Source]] for building custom applications
+  * [[https://github.com/jscad | Libraries and Source]] for building custom applications
 
 Click on any of the topics on the left to find out more about JSCAD.
 
-The contents of this site are maintained by the [[https://openjscad.nodebb.com/ | JSCAD User Group]]. Any questions about the contents should be asked there.
+The contents of this site are maintained by the [[https://openjscad.xyz/forum.html | JSCAD User Group]]. Any questions about the contents should be asked there.
 
 All access is granted via making an account at [[https://github.com|GitHub]].
