@@ -7,7 +7,7 @@ const { translate, scale, rotateX } = require('@jscad/modeling').transforms
 </code>
 
 ^  Transform  ^  Notes  ^
-| const newshape = align({modes: ['min', 'center', 'none'], alignTo: [10, null, 10], grouped: true}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.align | API]]  |
+| const newshape = align({modes: ['min', 'center', 'none'], relativeTo: [10, null, 10], grouped: true}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.align | API]]  |
 | const newshape = center({axes: [true, true, false], center: [15, 10, 0]}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.center | API]]  |
 | const newshape = centerX(oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.centerX | API]]  |
 | const newshape = centerY(oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.centerY | API]]  |

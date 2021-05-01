@@ -57,3 +57,5 @@
     * [[design_guide_measurements | Measurements]]
 
 [[jscad_design_math|Math Guide]]
+  * [[math_guide_conversions|Conversions]]
+  * [[math_guide_orientation|Orientation]]

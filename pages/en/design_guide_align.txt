@@ -5,9 +5,9 @@ Shapes can be aligned across X, Y, and Z axis. In other words, each shape is tra
 Defaults:
   * modes : ['center', 'center', 'min']
   * group : false (do not align all shapes as a group)
-  * alignTo : [0, 0, 0]
+  * relativeTo : [0, 0, 0]
 
 <code javascript>
 const newshapes = align({modes: ['min', 'none', 'none'], myshape1, myshape2, myshape3) // align shapes at the minimum X
-const newshapes = align({modes: ['min', 'center', 'none'], alignTo: [10, null, 10], grouped: true}, myshape1, myshape2, myshape3)
+const newshapes = align({modes: ['min', 'center', 'none'], relativeTo: [10, null, 10], grouped: true}, myshape1, myshape2, myshape3)
 </code>

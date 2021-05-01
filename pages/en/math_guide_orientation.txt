@@ -1,0 +1,17 @@
+===== Orientation =====
+
+All the internal calculations of JSCAD (and other included libraries) are based on the 'right-hand' rule. (For more information see discussions [[https://en.wikipedia.org/wiki/Right-hand_rule|here]] and [[https://www.pasco.com/products/guides/right-hand-rule|here]].)
+
+{{ :wiki:right_hand_rule_cross_product.svg?nolink&300 | Right-hand Rule}}
+
+This results in the following orientation of the three-dimensional coordinate system, i.e. orientation of X, Y, and Z axis.
+  * Positive X points to the right
+  * Positive Y points to the back
+  * Positive Z points to the top
+
+This also means that positive rotations are
+  * From positive X to positive Y about the Z axis
+  * From positive Y to positive Z about the X axis
+  * From positive Z to positive X about the Y axis
+
+It may take some time to understand well, and can be visualized by rotating shapes by both positive and negative angles.
