@@ -9,6 +9,8 @@ This results in the following orientation of the three-dimensional coordinate sy
   * Positive Y points to the back
   * Positive Z points to the top
 
+{{ :wiki:coordinate_system.svg?nolink&300 | Coordinate System}}
+
 This also means that positive rotations are
   * From positive X to positive Y about the Z axis
   * From positive Y to positive Z about the X axis

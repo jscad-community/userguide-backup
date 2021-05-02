@@ -1,7 +1,26 @@
 ===== Conversions =====
 
-degToRad
+==== Conversions between Degrees and Radians ====
 
-radToDeg
+Convert the given angle (degrees) to radians.
 
-radiusToSegments
+<code javascript>
+let radians = degToRad(90) // PI / 2 radians
+</code>
+
+Convert the given angle (radians) to degrees.
+
+<code javascript>
+let degrees = radToDeg(Math.PI / 2) // 90 degrees
+</code>
+
+==== Conversions of Radius to Segments ====
+
+Calculate the number of segments from the given radius based on minimum length or angle.
+
+There are various round shapes that support the 'segments' option. Often times, a design requires a specific precision for each segment. This function assists by calculating the appropriate number of segments based on radius, as well as minimum length or minimum angle.
+
+<code javascript>
+let segments = radiusToSegments(3.5, 0.1, 0) /* use minimum length */
+let segments = radiusToSegments(3.5, 0, Math.PI * 2 / 300) /* use minimum angle */ 
+</code>

@@ -47,12 +47,10 @@ Take the "Interactive Params: Gear" example for a spin. Its really impressive, a
 
   * Use your favorite editor
   * Exporting designs
-  * Importing other designs
+  * Importing designs
   * Sharing designs
 
-The format of a file is determined from the file extension when importing designs, For example, JSCAD designs are stored as files with the .jscad file extension.
-
-When you start to edit directly using your browser, the default language is '''JSCAD'''.
+The format of a file is determined from the file extension when importing designs, For example, JSCAD designs are stored as files with the standard ''.js'' file extension.
 
 ==== Install Locally ====
 

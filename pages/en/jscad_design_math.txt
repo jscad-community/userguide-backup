@@ -1,5 +1,5 @@
 ===== Math Guide =====
 
-{{page>math_guide_conversions}}
-
 {{page>math_guide_orientation}}
+
+{{page>math_guide_conversions}}
