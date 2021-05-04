@@ -6,42 +6,41 @@ This is a great way to learn about JSCAD, view 3D and 2D designs, and create som
 
 ==== Viewing Designs ====
 
-The website presents a page with three areas.
-  - Viewer
-  - Editor
-  - Info Panel
+The website presents a page without an initial design, so select an example from the list under the (?) in the above right corner. Try the first example called '2D Primitives Demonstration'.
 
-The initial design is the JSCAD logo, which is created from the contents of the script shown in the editor.
+{{ :wiki:jscad_screen_02.png | List of Examples}}
 
-{{ :wiki:jscad_website_01.mp4 |Initial View}}
+Just click the (?) again to close the list of examples.
 
-The view can be rotated, zoomed in or out, and moved by using the mouse buttons. (Or fingers if using a tablet or mobile phone.)
+The website presents a view of available 2D shapes, which is created from the contents of the example. The view can be rotated, zoomed in or out, and moved by using the mouse buttons. (Or fingers if using a tablet or mobile phone.)
 
-If you need a few pointers then click on the left hand tab, which will make the info panel visible. There’s a short help section on keystrokes and mouse functions.
+This time open the editor from the 'pen' mark in the upper right corner. Just click inside the popup window, and the JSCAD design will be shown.
 
-The editor can be hidden or shown by clicking on the right hand tab.
+{{ :wiki:jscad_screen_03.png | JSCAD Design}}
 
-//Note: Special keystrokes must be performed while using the editor.//
-
-There’s not much else to learn, as you are already using JSCAD. You may want to try a few of the examples, which can be found by clicking on //Examples// in the info panel.
+There’s not much else to learn, as you are already using JSCAD. You may want to try a few of the other examples, and explore some of the features of JSCAD.
 
 ==== Making Changes ====
 
-When browsing examples, the contents of the editor panel will also change. These are the actual designs, which were created by writing JSCAD scripts. The design can be changed by opening the editor, and changing any of the values, etc.
+While browsing examples, you may have noticed that the contents of the editor panel also changed. These are the actual designs, which were created by writing JSCAD scripts.
 
-Try it out. In the first example, change line 18. Update scale(10) to scale(5). Then hit RETURN+SHIFT.
+You can change each of the designs by opening the editor, and changing any of the values, etc.
 
-//Note: If the page fails to respond due to errors, just reload the website using your browser.//
+Try it out. Open the '2D Primitives Demonstration' again, and change line 25. Just add '⁄⁄' in front of 'star'. Now hit RETURN+SHIFT.
 
-Some of the examples show a small panel on the lower left, which allows changes to the design parameters. For example, the example called "Interactive Params: Servo Motor" allows different values for "Show plate". Change that to "No" then hit the Update button.
+==== Changing Parameters ====
 
-{{ :wiki:jscad_website_02.mp4 |}}
+Some of the examples show a small panel on the lower left, which allows changes to the design parameters. For example, the "Parametric Involute Gear" example allows different values for "Number of teeth". Change that to "20" then hit the Update button.
+
+{{ :wiki:jscad_screen_04.png | List of Examples}}
 
 **This is a unique feature of designs written in JSCAD. Any number of designs can be created by simply changing parameters.**
 
-Take the "Interactive Params: Gear" example for a spin. Its really impressive, and fun.
+Take the "Parametric Involute Gear" example for a spin. Click 'Instant Update'. Now change any of the parameters. Its really impressive, and fun.
 
-  * creating new designs
+==== Creating New Designs ====
+
+tbw
 
 ==== More Things ====
 
@@ -50,7 +49,6 @@ Take the "Interactive Params: Gear" example for a spin. Its really impressive, a
   * Importing designs
   * Sharing designs
 
-The format of a file is determined from the file extension when importing designs, For example, JSCAD designs are stored as files with the standard ''.js'' file extension.
 
 ==== Install Locally ====
 
@@ -63,14 +61,12 @@ However, for those who want more control, the website can be installed and used 
   - Open the folder called OpenJSCAD.org-master
   - Then open index.html which is found in packages/web
 
-For those with a little more technical background, the download can be down from the command line.
-  - cd <base directory>
+For those with a little more technical background, the download can be done from the command line.
   - git clone https://github.com/jscad/OpenJSCAD.org.git
   - cd OpenJSCAD.org
+  - Then open index.html which is found in packages/web
 
-install dependencies npm install
-if desired, make the openjscad command refer to the code in this folder: npm link
-if desired, start dev server: npm run start-dev
+And for those that want to make changes to the website, there is [[https://github.com/jscad/OpenJSCAD.org/blob/master/CONTRIBUTING.md|a guide on making changes]].
 
 ==== Integrate into a Website ====
 

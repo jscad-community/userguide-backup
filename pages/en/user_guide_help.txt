@@ -2,7 +2,7 @@
 
 Looking for more help?
 
-Try asking questions to other uses of JSCAD. We have a growing [[https://openjscad.nodebb.com/ | JSCAD User Group]], and most questions are answered immediately by friends.
+Try asking questions to other users of JSCAD. We have a growing [[https://openjscad.nodebb.com/ | JSCAD User Group]], and most questions are answered immediately by friends.
 
 Also, try visiting the [[https://github.com/jscad-community | JSCAD Community]] site at GitHub. There are several projects from users, showing different ways to use JSCAD to create designs.
 

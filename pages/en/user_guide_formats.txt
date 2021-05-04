@@ -3,13 +3,13 @@
 The following languages and file-formats are supported:
 
 ^  Format  ^  Ext  ^  Website  ^  In/Out  ^  Notes  ^
-| JSCAD  | .jscad  | [[https://www.jscad.xyz|jscad.xyz]]  |{{:wiki:importexport.png?direct|}}| JSCAD based designs for 2D and 3D CAD models  |
+| JSCAD  | .js  | [[https://www.jscad.xyz|jscad.xyz]]  |{{:wiki:importexport.png?direct|}}| JSCAD based designs for 2D and 3D CAD models  |
 | AMF  | .amf  | [[https://en.wikipedia.org/wiki/Additive_Manufacturing_File_Format|Wikipedia: AMF (file format)]] |{{:wiki:importexport.png?direct|}}| Additive Manufacturing format for 3D objects |
 | DXF  | .dxf  | [[https://www.autodesk.com/techpubs/autocad/acadr14/dxf/|DXF (file format)]] |{{:wiki:importexport.png?direct|}}| AutoCad Drawing Interchange format for 2D and 3D objects |
 | JSON  | .json  | [[https://www.json.org/json-en.html|JSON (notation)]] |{{:wiki:importexport.png?direct|}}| JSON (JavaScript Object Notation) is a lightweight data-interchange format |
 | OBJ  | .obj  | [[https://en.wikipedia.org/wiki/Wavefront_.obj_file|Wikipedia: OBJ (file format)]] |{{:wiki:import.png?direct|}}| Wavefront Geometry File format (import only) |
 | STL | .stl | [[https://en.wikipedia.org/wiki/STL_(file_format)|Wikipedia: STL (file format)]] |{{:wiki:importexport.png?direct|}}| STL format for the surface geometry of 3D objects |
 | SVG  | .svg  | [[https://www.w3.org/TR/SVG/|W3C SVG Standard]] |{{:wiki:importexport.png?direct|}}| Scalable Vector Graphics for 2D objects |
-| X3D  | .x3d  | [[http://www.web3d.org/x3d/what-x3d|Web3D.org]] |{{:wiki:export.png?direct|}}| Web3D format for 3D objects |
+| X3D  | .x3d  | [[http://www.web3d.org/x3d/what-x3d|Web3D.org]] |{{:wiki:export.png?direct|}}| Web3D format for 3D objects (export only) |
 
 //Note: JSCAD is written in JavaScript, as well as JSCAD designs. Therefore, files saved with the standard JavaScript file extention (.js) can also be imported as JSCAD designs.//
