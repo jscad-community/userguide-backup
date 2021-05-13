@@ -1,9 +1,11 @@
 ==== Design Parameters ====
-A design can have parameters by declaring a special function; getParameterDefinitions().
 
-In applications and browsers, these parameters are presented to users, allowing users to interactively change designs.
+A design can have interactive parameters by declaring a special function; getParameterDefinitions().
+
+In applications and browsers, these parameters are presented to users, allowing users to change designs.
 
 === Usage ===
+
 This function must return an array of parameter definitions, as show below.
 
 <code javascript>
@@ -58,4 +60,4 @@ const getParameterDefinitions = () => {
 }
 </code>
 
-The list of captions are those shown in the HTML form, i.e. pull down list. The list of values define a value for each caption. And, the choosen value passed into the main() function.
+The list of captions are those shown as a pull down list. The list of values define a value for each caption. And, the chosen value is passed into the main function.

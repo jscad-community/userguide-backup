@@ -27,7 +27,7 @@ let myshape = scale([5, 10]). circle({radius: 5}))
 myshape = translate([0, 0, 10]), rotateX(45, myshape))
 </code>
 
-The original shape can be transformed any number of times. For example, the same cylinder can be rotated, making copies of the cylinders, and then unioned together. This is a common pattern when creating complex designs.
+The original shape can be transformed any number of times. For example, the a single cylinder can be rotated and translated to make multiple copies of the original. And then, the set of cylinders can be combined together using union. This is a common pattern when creating complex designs.
 
 The transforms return a single shape or an array of shapes depending on the given shapes.
 
@@ -38,9 +38,7 @@ const newshapes = align({modes: ['min', 'center', 'none'], alignTo: [10, null, 1
 
 ==== Orientation ====
 
-The standard for all 3D systems today, including graphics cards, design tools, etc. is orientating shapes using the right-hand rule. JSCAD follows the same rules internally, and produces shapes, applies transforms, etc. using the right-hand rule of orientation.
-
-//[[https://en.wikipedia.org/wiki/Right-hand_rule|Learn about the right-hand rule at Wikipedia.org]]//
+The standard for all 3D systems today, including graphics cards, design tools, etc. is orientating shapes using the right-hand rule. JSCAD follows the same rules internally, and produces shapes, applies transforms, etc. using the right-hand rule of orientation. See [[en:math_guide_orientation|Orientation]] for more information.
 
 {{page>design_guide_rotate}}
 

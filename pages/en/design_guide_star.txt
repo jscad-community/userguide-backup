@@ -15,5 +15,6 @@ Defaults:
   * center : [0, 0, 0]
 
 <code javascript>
-const myshape = star({vertices: 8, outerRadius: 10})
+let star1 = star({vertices: 8, outerRadius: 10}) // star with 8/2 density
+let star2 = star({vertices: 12, outerRadius: 40, innerRadius: 20}) // star with given radius
 </code>

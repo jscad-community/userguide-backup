@@ -27,7 +27,6 @@ const myshape = cylinder({radius: 5, height: 10, center: [5, 5, 5], segments: 64
 Various cylindrical shapes can be created using the elliptical cylinder, including cylinders with changing radius (cones).
 
 Defaults:
-  * radius : 1
   * height : 2
   * startRadius : [1, 1]
   * endRadius : [1, 1]

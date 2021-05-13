@@ -6,7 +6,7 @@ A two dimensional shape made with four straight sides where all interior angles 
 
 //[[http://www.mathsisfun.com/geometry/rectangle.html|Learn about rectangles at MathIsFun.com]]//
 
-The ''size'' specifies the size across X and Y axis. Rectangles can be created at a requested ''center''..
+The ''size'' specifies the size across X and Y axis. Rectangles can be created at a requested ''center''.
 
 Defaults:
   * size : [2, 2]
@@ -23,6 +23,10 @@ const myshape = rectangle({size: [3, 4], center: [5, 5])
 
 The specialized square primitive also exists, but requires only one number value for all sides.
 
+Defaults:
+  * size : 2
+  * center : [0, 0]
+
 <code javascript>
 const myshape = square({size: 3)
 const myshape = square({size: 3, center: [5, 5])
@@ -33,6 +37,12 @@ const myshape = square({size: 3, center: [5, 5])
 {{ :wiki:jscad-roundedRectangle.svg?nolink | Rectangle}}
 
 Rounded rectangles can be created by specifying a ''roundRadius'' for the corners.
+
+Defaults:
+  * size : [2, 2]
+  * center : [0, 0]
+  * roundedRadius: 0.2
+  * segments: 32
 
 <code javascript>
 const myshape = roundedRectangle({size: [10, 20], roundRadius: 2})

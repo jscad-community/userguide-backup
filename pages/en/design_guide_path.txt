@@ -86,7 +86,7 @@ const mypath = line([[10, 10], [-10, 10], [-10, -10], [10, 10]])
 const myshape = geom2.fromPoints(path2.toPoints(mypath))
 </code>
 
-Second, a path can be expanded into a two dimensional shape. The result is a shape that fits around the path. The path can be either open or closed.
+Second, a path can be expanded into a two dimensional shape. The result is a two dimensional shape that fits around the path.
 
 <code javascript>
 // create an open path in shape of L

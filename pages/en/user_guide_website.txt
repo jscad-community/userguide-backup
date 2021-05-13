@@ -32,7 +32,7 @@ Try it out. Open the '2D Primitives Demonstration' again, and change line 25. Ju
 
 Some of the examples show a small panel on the lower left, which allows changes to the design parameters. For example, the "Parametric Involute Gear" example allows different values for "Number of teeth". Change that to "20" then hit the Update button.
 
-{{ :wiki:jscad_screen_04.png | List of Examples}}
+{{ :wiki:jscad_screen_04.png | Example with Parameters}}
 
 **This is a unique feature of designs written in JSCAD. Any number of designs can be created by simply changing parameters.**
 
@@ -40,12 +40,17 @@ Take the "Parametric Involute Gear" example for a spin. Click 'Instant Update'. 
 
 ==== Creating New Designs ====
 
-tbw
+Creating a new design is easy as well. Just make a copy of an example by cutting and pasting the script into your favorite text editor. Then save the file with an appropriate name and extension (.js) Now the file can be dragged and dropped to the website.
 
+Make a few changes, then save the file. Now, drag and drop again.
+
+There's more information on the Anatomy of A Design, etc. on the left. Have a quick read and have fun!
+
+==== Exporting Designs ====
+
+tbw
 ==== More Things ====
 
-  * Use your favorite editor
-  * Exporting designs
   * Importing designs
   * Sharing designs
 
