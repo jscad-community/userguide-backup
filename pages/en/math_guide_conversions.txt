@@ -16,11 +16,17 @@ let degrees = radToDeg(Math.PI / 2) // 90 degrees
 
 ==== Conversions of Radius to Segments ====
 
-Calculate the number of segments from the given radius based on minimum length or angle.
+Calculate the number of segments to complete the given radius (full rotation), using either minimum length or minimum angle.
 
-There are various round shapes that support the 'segments' option. Often times, a design requires a specific precision for each segment. This function assists by calculating the appropriate number of segments based on radius, as well as minimum length or minimum angle.
+There are various round shapes that support the 'segments' option. However, designs may require a specific 'precision' for specific shapes. For example, an arc as part of a path requires specific length segments for proper laser cutting.
+
+This function can be used to calculate the appropriate number of segments based on the radius of the rounded shape.
+
+Using the above example, the arc has a radius of 3.5 mm (units are typically mm). The laser printer requires 0.1 mm segments or more while moving. The segments can be calculated, and supplied when creating the arc.
 
 <code javascript>
 let segments = radiusToSegments(3.5, 0.1, 0) /* use minimum length */
 let segments = radiusToSegments(3.5, 0, Math.PI * 2 / 300) /* use minimum angle */ 
 </code>
+
+//NOTE: The number of segments can become large depending on the 'precision' requirements. Testing designs with a lower number of segments is recommended.//

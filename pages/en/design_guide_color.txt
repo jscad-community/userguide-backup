@@ -2,6 +2,8 @@
 
 Shapes can exhibit different colors. And just like the other transformations, adding color to a shape produces a new shape, i.e. one with color.
 
+Colors are not only important for visual rendering but also controlling the selection of filaments during 3D printing. Therefore, colors should be applied as the last step in designs to insure proper printing.
+
 <code javascript>
 const myshape = colorize([1, 0, 0], sphere()) // RGB red
 const myshape = colorize([1, 0.5, 0.3], sphere()) // color

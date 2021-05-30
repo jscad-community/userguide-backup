@@ -1,6 +1,6 @@
 ====== JSCAD User Guide ======
 
-JSCAD (formally know as OpenJSCAD) provides a programmer’s approach to design 3D models. In particular, this functionality is tuned towards creating precise models for 3D printing.
+JSCAD (formally know as OpenJSCAD) provides a programmer’s approach when designing 3D models. JSCAD is provided as an open source set of modular, browser and command line tools for creating parametric 2D and 3D designs with JavaScript code. It provides a quick, precise and reproducible method for generating 3D models, and is especially useful for 3D printing applications.
 
 JSCAD provides
   * ability to create and manipulate 3D models, as well as 2D models
@@ -10,7 +10,8 @@ JSCAD provides
 JSCAD is available as
   * [[http://www.openjscad.xyz | Website]] for quickly creating models
   * Command Line utility for complex projects and file format conversions
-  * [[https://github.com/jscad | Libraries and Source]] for building custom applications
+  * [[https://github.com/jscad/OpenJSCAD.org/blob/master/packages/README.md | NPM packages]] for quickly building custom applications or websites
+  * [[https://github.com/jscad/OpenJSCAD.org | Source code]] for extending or changing functionality
 
 Click on any of the topics on the left to find out more about JSCAD.
 
