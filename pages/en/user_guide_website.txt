@@ -48,13 +48,12 @@ There's more information on the Anatomy of A Design, etc. on the left. Have a qu
 
 ==== Exporting Designs ====
 
+JSCAD was created for 3D printing enthusiasts. Any design can be exported to another format, e.g. STL meshes, SVG images, etc. The supported file formats are listed on the left.
+
+Exporting is initiated by selecting the format, and pushing the Export button. A small pop-up window will be presented, allowing the contents to be saved as a file.
+==== Sharing Designs ====
+
 tbw
-==== More Things ====
-
-  * Importing designs
-  * Sharing designs
-
-
 ==== Install Locally ====
 
 There is no need to install anything. Just jump to the project website at [[http://www.openjscad.xyz|www.openjscad.xyz]] and start in.

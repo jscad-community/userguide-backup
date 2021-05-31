@@ -14,11 +14,11 @@ Thank you to all the people who have already contributed to this project:
 
   * We only accept bug reports and pull requests on **GitHub**.
 
-  * If you have a question about how to use the OpenJSCAD.org website, JSCAD application, or command line interface then please start a conversation at the [[https://openjscad.xyz/forum.html | JSCAD User Group]].
+  * If you have a question about how to use the JSCAD website, application, or command line interface then please start a conversation at the [[https://openjscad.xyz/forum.html | JSCAD User Group]].
 
   * If you have a change or new feature in mind then please start a conversation with the [[https://openjscad.nodebb.com/category/5/development-discussions | Core Developers]] and start contributing changes.
 
-==== Support ====
+==== Backers ====
 
 Sadly, the JSCAD organization doesn't come free. We need financial support from users and organizations. It allows us to maintain the website and makes life easier for everyone. If you cannot contribute technically then consider supporting JSCAD.
 
@@ -31,3 +31,7 @@ Thank you to all our backers! 🙏 [[https://opencollective.com/openjscad#backer
 And if your organization enjoys the benefits of JSCAD then consider supporting us with a monthly contribution. Your logo will show up here with a link to your website. [[https://opencollective.com/openjscad#sponsor|Become a sponsor]]
 
 {{https://opencollective.com/openjscad/sponsor/0/avatar.svg}}
+{{https://opencollective.com/openjscad/sponsor/1/avatar.svg}}
+{{https://opencollective.com/openjscad/sponsor/2/avatar.svg}}
+{{https://opencollective.com/openjscad/sponsor/3/avatar.svg}}
+{{https://opencollective.com/openjscad/sponsor/4/avatar.svg}}
