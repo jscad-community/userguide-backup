@@ -1,0 +1,11 @@
+==== Scission ====
+
+//'Scission' meaning "The act of cutting or dividing, as with an edged instrument"//
+
+{{ :wiki:jscad-scission.png?nolink | Union}}
+
+Sometimes complex shapes need to be divided into the smaller pieces. A good example is when creating 'molds' from the pieces of a boolean operation. Or splitting a complex shape into the component pieces from an imported design, i.e. splitting STL models.
+
+<code javascript>
+const newshapes = scission(bigshape) // expect an array containing the pieces
+</code>

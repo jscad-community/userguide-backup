@@ -5,21 +5,22 @@
 The 'booleans' are accessed through the modeling API using the following:
 
 <code javascript>
-const { union, intersect, subtract } = require('@jscad/modeling').booleans
+const { union, intersect, scission, subtract } = require('@jscad/modeling').booleans
 </code>
 
 ^  Operation  ^  Notes  ^
-| const newshape = intersect(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.intersect | API]]  |
-| const newshape = subtract(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.subtract | API]]  |
-| const newshape = union(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.union | API]]  |
+| const newshape = intersect(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_booleans.html#.intersect | API]]  |
+| const newshape = subtract(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_booleans.html#.subtract | API]]  |
+| const newshape = union(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_booleans.html#.union | API]]  |
+| const newshapes = scission(bigshape)  | [[https://www.openjscad.xyz/docs/module-modeling_booleans.html#.scission | API]]  |
 ==== Hull Operations ===
 
 The 'hulls' are accessed through the modeling API using the following:
 
 <code javascript>
-const { hull, chainHull } = require('@jscad/modeling').hulls
+const { hull, hullChain } = require('@jscad/modeling').hulls
 </code>
 
 ^  Operation  ^  Notes  ^
-| const newshape = chainHull(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.chainHull | API]]  |
-| const newshape = hull(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.hull | API]]  |
+| const newshape = hull(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_hulls.html#.hull | API]]  |
+| const newshape = hullChain(oldshape0, oldshape1)  | [[https://www.openjscad.xyz/docs/module-modeling_hulls.html#.hullChain | API]]  |

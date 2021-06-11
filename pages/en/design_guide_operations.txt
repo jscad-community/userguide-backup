@@ -11,3 +11,5 @@ All shapes (primitives or the results of operations) can be passed to special fu
 {{page>design_guide_hull}}
 
 {{page>design_guide_chain_hull}}
+
+{{page>design_guide_scission}}

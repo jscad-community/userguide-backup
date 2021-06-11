@@ -3,10 +3,11 @@
 The 'extrusions' are accessed through the modeling API using the following:
 
 <code javascript>
-const { extrudeLinear, extrudeRegtangular, extrudeRotate  } = require('@jscad/modeling').extrusions
+const { extrudeLinear, extrudeRegtangular, extrudeRotate, project  } = require('@jscad/modeling').extrusions
 </code>
 
 ^  Extrusion of 2D Shapes  ^  Notes  ^
-| const newshape = extrudeLinear({height: 20, twistAngle: Math.PI, twistSteps: 20}, oldshape))  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.extrudeLinear | API]]  |
-| const newshape = extrudeRectangular({size: 3, height: 15}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.extrudeRectangular | API]]  |
-| const newshape = extrudeRotate({startAngle: Math.PI, angle: Math.PI / 2, overflow: 'cap', segments: 64}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.extrudeRotate | API]]  |
+| const newshape = extrudeLinear({height: 20, twistAngle: Math.PI, twistSteps: 20}, oldshape))  | [[https://www.openjscad.xyz/docs/module-modeling_extrusions.html#.extrudeLinear | API]]  |
+| const newshape = extrudeRectangular({size: 3, height: 15}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_extrusions.html#.extrudeRectangular | API]]  |
+| const newshape = extrudeRotate({startAngle: Math.PI, angle: Math.PI / 2, overflow: 'cap', segments: 64}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_extrusions.html#.extrudeRotate | API]]  |
+| const newshape = project({axis: [0, 0, 1], origin: [0, 0, 0]}, oldshape)  | [[https://www.openjscad.xyz/docs/module-modeling_extrusions.html#.project | API]]  |

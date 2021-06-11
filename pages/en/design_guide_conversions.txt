@@ -7,3 +7,9 @@ Extruding a two dimensional shape into a three dimensional shape can be performe
 {{page>design_guide_rectangular_extrude}}
 
 {{page>design_guide_rotate_extrude}}
+
+===== Projections =====
+
+The projection of a shape is a two dimensional representation of a three dimensional object. In this case, the projection is a parallel projection where the lines of projection are parallel, i.e. the projection is the same whether the shape is far away or near to the projection plane.
+
+{{page>design_guide_project}}

@@ -1,0 +1,13 @@
+==== Project ====
+
+add diagram
+
+The outlines of three dimension shapes can be projected to two dimensional space. The 'axis' and 'origin' define the plane of which to project, which can be positioned anywhere about the shape.
+
+Defaults: (Z Axis)
+  * axis : [0, 0, 1]
+  * origin: [0, 0, 0]
+
+<code javascript>
+const myshape = project({}, sphere({radius: 20, segments: 5}))
+</code>
