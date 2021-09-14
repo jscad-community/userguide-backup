@@ -53,7 +53,25 @@ JSCAD was created for 3D printing enthusiasts. Any design can be exported to ano
 Exporting is initiated by selecting the format, and pushing the Export button. A small pop-up window will be presented, allowing the contents to be saved as a file.
 ==== Sharing Designs ====
 
-tbw
+Designs can be easily shared with others as file attachments to mail, messages, etc.
+
+In addition, a design (which is available online) can be shared using a special link (URL). You can copy and paste the link into many applications, and send. The design will be loaded an shown immediately. Here's how...
+
+First, obtain the link (URL) to the online design content. Here's a link to a design on Thingiverse.
+
+https://www.thingiverse.com/thing:4788337
+
+By clicking on the "Thing Files", the file called 'parametric_butt_hinge_3.7.js" will be shown. COPY the link shown while hovering over the "Download" button.
+
+https://www.thingiverse.com/download:9333400
+
+This link (URL) can be provided as a parameter to the JSCAD website; www.openjscad.xyz
+
+https://www.openjscad.xyz/?uri=https://www.thingiverse.com/download:9621819
+
+https://www.openjscad.xyz/?uri=https://www.thingiverse.com/download:9621830
+
+Try it out!
 ==== Install Locally ====
 
 There is no need to install anything. Just jump to the project website at [[http://www.openjscad.xyz|www.openjscad.xyz]] and start in.
