@@ -55,23 +55,39 @@ Exporting is initiated by selecting the format, and pushing the Export button. A
 
 Designs can be easily shared with others as file attachments to mail, messages, etc.
 
-In addition, a design (which is available online) can be shared using a special link (URL). You can copy and paste the link into many applications, and send. The design will be loaded an shown immediately. Here's how...
+In addition, a design (which is available online) can be shared using a special link (URL). You can copy and paste the link into many applications, and send. The design will be loaded and shown immediately. Here's how...
 
 First, obtain the link (URL) to the online design content. Here's a link to a design on Thingiverse.
 
-https://www.thingiverse.com/thing:4788337
+https://www.thingiverse.com/thing:1422172
 
-By clicking on the "Thing Files", the file called 'parametric_butt_hinge_3.7.js" will be shown. COPY the link shown while hovering over the "Download" button.
-
-https://www.thingiverse.com/download:9333400
+By clicking on the "Thing Files", the file called 'sliding-door-bolt.js" will be shown. COPY the link shown while hovering over the "Download" button (This should be https://www.thingiverse.com/download:9621819)
 
 This link (URL) can be provided as a parameter to the JSCAD website; www.openjscad.xyz
 
 https://www.openjscad.xyz/?uri=https://www.thingiverse.com/download:9621819
 
-https://www.openjscad.xyz/?uri=https://www.thingiverse.com/download:9621830
-
 Try it out!
+
+==== Trouble Shooting Designs ====
+
+Hopefully creating designs will be easy. The best approach is making small incremental changes and testing the results. Small parts can be created and tested separately, and brought together into the large design later.
+
+However, there are times when all goes wrong, and some trouble shooting is required. First, make sure the browser has the 'browser tools' or 'developer tools' enabled, as the tools are turned off sometimes. Second, open the 'tools' which is just a menu selection.
+
+The browser window will now have two sections; the JSCAD design and the tools. The tool of interest is the 'console', which shows errors, warning, messages, etc. This console can be cleared anytime, and will clear if the JSCAD design is reloaded.
+
+What's so valuable about the console?
+
+This will show more information about the errors. There should be a 'stack trace' as to where the error occurred.
+
+Also, additional messages can be sent to the console, making trouble shooting easier. For example, the contents of a parameter can be sent to the console by:
+
+<code javascript>
+console.log('parameter',parameter)
+</code>
+
+Hopefully, these pointers will be enough to trouble shoot any issues. If not then please contact User Group for some great help.
 ==== Install Locally ====
 
 There is no need to install anything. Just jump to the project website at [[http://www.openjscad.xyz|www.openjscad.xyz]] and start in.
@@ -90,6 +106,3 @@ For those with a little more technical background, the download can be done from
 
 And for those that want to make changes to the website, there is [[https://github.com/jscad/OpenJSCAD.org/blob/master/CONTRIBUTING.md|a guide on making changes]].
 
-==== Integrate into a Website ====
-
-The website can be integrated into an existing website.
