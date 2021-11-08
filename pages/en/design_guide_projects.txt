@@ -28,3 +28,32 @@ const main = (params) => {
 
 module.exports = { main }
 </code>
+
+Projects can also be used when working with external formats, such as STL files. This allows designs to include STL meshes just like any other part. The STL file is placed within the project directory just like any other part.
+
+  * .../rc-car
+    * chassis.js
+    * body.js
+    * tire.js
+    * index.js
+    * rc_receiver.stl
+
+And the design is adjusted to include the new part from the STL file.
+
+<code javascript>
+const chassis = require('./chassis')
+const body = require('./body')
+const tire = require('./tire')
+const receiver = require('./rc_receiver.stl')
+
+const main = (params) => {
+  const partA = chassis(params)
+  const partB = body(params)
+  const tires = [
+    ...
+  ]
+  return [partA, partB, tires, receiver]
+}
+
+module.exports = { main }
+</code>

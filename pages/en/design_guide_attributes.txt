@@ -2,9 +2,9 @@
 
 at
 
-{{page>design_guide_measurements}}
-
 {{page>design_guide_color}}
+
+{{page>design_guide_measurements}}
 
 
 

@@ -1,7 +1,47 @@
 ==== Measurements ====
 
-something
+Sometimes the measurements of a shape can assist when creating a design. This is especially true for shapes imported from external formats.
 
-=== Bounds ===
+=== Area ===
+
+Measuring the area of a shape is possible, for both 2D and 3D shapes.
+
+//Note: The area for a path is always zero(0) as paths are infinitely thin.//
+
+=== Bounding Box ===
+
+Measuring the bounding box (min and max bounds) of a shape is possible.
 
 The getBounds function can be used to retrieve the bounding box of an object, returning an array with two points specifying the minimum and maximum coordinates, i.e. X, Y, Z values.
+
+=== Bounding Sphere ===
+
+Measuring the (approximate) bounding sphere of a shape is possible.
+
+=== Center ===
+
+Measuring the center of a shape is possible.
+
+//Note: This is equivalent to the center of the bounding box.//
+
+=== Center of Mass ===
+
+Measuring the center of mass of a shape is possible.
+
+//Note: The center of mass for a path is always zero(0) as paths are infinitely thin.//
+
+=== Dimensions ===
+
+Measuring the dimensions of a shape is possible.
+
+//Note: This is the equivalent width, depth, height of the bounding box.//
+
+=== Epsilon ===
+
+Measuring the epsilon of shapes is possible. Epsilon values are used in various functions to determine minimum distances between points, planes, etc.
+
+=== Volume ===
+
+Measuring the volume of a shape is possible.
+
+//Note: The volume of 2D shapes is always zero(0).//

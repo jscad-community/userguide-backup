@@ -1,6 +1,6 @@
 ==== Align ====
 
-Shapes can be aligned across X, Y, and Z axis. In other words, each shape is translated to the requested position, aligning the boundaries of the shapes. The ''modes'' of alignment control which position to use, with values 'center', 'min', 'max', or 'none'. The alignment can also be positioned to a specific point, ''alignTo''.
+Shapes can be aligned across X, Y, and Z axis. In other words, each shape is translated to the requested position, aligning the boundaries of the shapes. The ''modes'' of alignment control which position to use, with values 'center', 'min', 'max', or 'none'. The alignment can also be positioned to a specific point, ''relativeTo''.
 
 Defaults:
   * modes : ['center', 'center', 'min']
