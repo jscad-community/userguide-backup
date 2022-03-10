@@ -96,4 +96,11 @@ const myshape = expand({delta: 2, corners: 'chamfer'}, mypath)
 
 === Conversion to 3D Shape ===
 
-Hint: Any two dimensional shape can be extruded into a three dimensional shape.
+Two dimensional shapes can be extruded into three dimensional shapes.
+
+<code javascript>
+// create a closed path in shape of triangle
+const mypath = path2.fromPoints({ closed: true }, [[0, 0], [12, 0], [6, 10]])
+// extrude into triangular prism
+const myshape = extrudeLinear({ height: 15 }, mypath)
+</code>
