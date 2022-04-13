@@ -14,6 +14,8 @@ Defaults:
   * twistSteps : 1 
 
 <code javascript>
+const { extrudeLinear } = require('@jscad/modeling').extrusions
+
 const myshape = extrudeLinear({height: radiusZ * 2}, shape1)
 const myshape = extrudeLinear({height: radiusZ * 2, twistAngle: Math.PI / 2, twistSteps: 10}, shape2)
 </code>

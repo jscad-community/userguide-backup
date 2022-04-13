@@ -13,6 +13,8 @@ Defaults:
   * center : [0, 0, 0]
 
 <code javascript>
+const { cuboid } = require('@jscad/modeling').primitives
+
 const myshape = cuboid({size: [1, 2, 3]})
 const myshape = cuboid({size: [1, 2, 3], center: [4, 5, 6]})
 </code>
@@ -28,6 +30,8 @@ Defaults:
   * center : [0, 0, 0]
 
 <code javascript>
+const { cube } = require('@jscad/modeling').primitives
+
 const myshape = cube({size: 3})
 const myshape = cube({size: 3, center: [4, 5, 6]})
 </code>
@@ -45,6 +49,8 @@ Defaults:
   * segments : 32
 
 <code javascript>
+const { roundedCuboid } = require('@jscad/modeling').primitives
+
 const myshape = roundedCuboid({size: [1, 2, 3], roundRadius: 0.25})
 const myshape = roundedCuboid({size: [1, 2, 3], roundRadius: 0.25, center: [4, 5, 6], segments: 32})
 </code>
