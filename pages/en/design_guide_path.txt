@@ -3,6 +3,9 @@
 A path is a series of points, connected by very thin (invisible) line segments. Paths can be created as a ''line'' from an array of points, or by calling various functions to create or extend another path.
 
 <code javascript>
+const { line } = require('@jscad/modeling').primitives
+const { path2 } = require('@jscad/modeling').geometries
+
 const mypathA = line([[10, 10], [-10, 10]])
 const mypathB = line([[-10, -10], [10, -10]])
 let mypath = path2.concat(mypathA, mypathB)
@@ -33,6 +36,8 @@ Defaults:
   * segments : 32
 
 <code javascript>
+const { arc } = require('@jscad/modeling').primitives
+
 const mypath = arc({radius: 5, startAngle: Math.PI / 2})
 const mypath = arc({center: [5, 5], radius: 5, startAngle: Math.PI, endAngle: Math.PI / 2, segments: 4})
 </code>
@@ -42,6 +47,9 @@ const mypath = arc({center: [5, 5], radius: 5, startAngle: Math.PI, endAngle: Ma
 Any number of points can be appended to a path, which produces a new path.
 
 <code javascript>
+const { path2 } = require('@jscad/modeling').geometries
+const { line } = require('@jscad/modeling').primitives
+
 const mypath = line([[27, -22], [27, 22]])
 const newpath = path2.appendPoints([[-27, 22], [-27, -27], [27, -22]], mypath)
 </code>
@@ -57,9 +65,11 @@ Defaults:
 //Note: This implementation follows the SVG specifications.//
 
 <code javascript>
-let p5 = path2.create({}, [[10,-20]])
-p5 = path2.appendBezier({controlPoints: [[10,-10],[25,-10],[25,-20]]}, p5);
-p5 = path2.appendBezier({controlPoints: [null, [25,-30],[40,-30],[40,-20]]}, p5)
+const { path2 } = require('@jscad/modeling').geometries
+
+let p1 = path2.create([[10,-20]])
+p1 = path2.appendPoints([[27.5,-3.28125]], p1)
+p1 = path2.appendArc({endpoint: [12.5, -22.96875], radius: [15, -19.6875]}, p1)
 </code>
 
 In addition, 'bézier' curves can be appended to a path, which creates a series of line segments that simulate a 'bézier' curve.
@@ -69,8 +79,10 @@ The 'bézier' curve starts at the last point in the given path, and ends at the 
 //Note: This implementation follows the SVG specifications.//
 
 <code javascript>
-let p5 = path2.create({}, [[10,-20]])
-p5 = path2.appendBezier({controlPoints: [[10,-10],[25,-10],[25,-20]]}, p5);
+const { path2 } = require('@jscad/modeling').geometries
+
+let p5 = path2.create([[10,-20]])
+p5 = path2.appendBezier({controlPoints: [[10,-10],[25,-10],[25,-20]]}, p5)
 p5 = path2.appendBezier({controlPoints: [null, [25,-30],[40,-30],[40,-20]]}, p5)
 </code>
 
@@ -81,6 +93,9 @@ There are many ways to convert paths into to two dimensional shapes. The followi
 First, a two dimensional shape can be created from the points inside a path, but the path must be **closed**.
 
 <code javascript>
+const { geom2, path2 } = require('@jscad/modeling').geometries
+const { line } = require('@jscad/modeling').primitives
+
 // create a closed path in shape of triangle
 const mypath = line([[10, 10], [-10, 10], [-10, -10], [10, 10]])
 const myshape = geom2.fromPoints(path2.toPoints(mypath))
@@ -90,6 +105,9 @@ Second, a path can be expanded into a two dimensional shape. The result is a two
 
 <code javascript>
 // create an open path in shape of L
+const { expand } = require('@jscad/modeling').expansions
+const { line } = require('@jscad/modeling').primitives
+
 const mypath = line([[10, 10], [-10, 10], [-10, -10]])
 const myshape = expand({delta: 2, corners: 'chamfer'}, mypath)
 </code>
@@ -99,6 +117,9 @@ const myshape = expand({delta: 2, corners: 'chamfer'}, mypath)
 Two dimensional shapes can be extruded into three dimensional shapes.
 
 <code javascript>
+const { path2 } = require('@jscad/modeling').geometries
+const { extrudeLinear } = require('@jscad/modeling').extrusions
+
 // create a closed path in shape of triangle
 const mypath = path2.fromPoints({ closed: true }, [[0, 0], [12, 0], [6, 10]])
 // extrude into triangular prism

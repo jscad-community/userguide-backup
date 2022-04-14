@@ -14,8 +14,10 @@ Defaults:
   * segments: 32
 
 <code javascript>
+const { ellipse } = require('@jscad/modeling').primitives
+
 const myshape = ellipse({radius: [5, 10]})
-const myshape = circle({radius: [5, 10], center: [5, 5], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})
+const myshape = ellipse({radius: [5, 10], center: [5, 5], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})
 </code>
 
 === Circle ===
@@ -34,6 +36,8 @@ Defaults:
   * segments: 32
 
 <code javascript>
+const { circle } = require('@jscad/modeling').primitives
+
 const myshape = circle({radius: 10})
 const myshape = circle({radius: 10, center: [5, 5], startAngle: Math.PI / 2, endAngle: Math.PI, segments: 64})
 </code>

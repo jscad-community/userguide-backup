@@ -28,5 +28,7 @@ Defaults:
   * outerRotation : PI * 2
 
 <code javascript>
+const { torus } = require('@jscad/modeling').primitives
+
 const myshape = torus({innerRadius: 10, outerRadius: 100})
 </code>

@@ -15,6 +15,8 @@ Defaults:
   * segments : 32
 
 <code javascript>
+const { cylinder } = require('@jscad/modeling').primitives
+
 const myshape = cylinder({radius: 5, height: 10})
 const myshape = cylinder({radius: 5, height: 10, center: [5, 5, 5], segments: 64})
 </code>
@@ -36,6 +38,8 @@ Defaults:
   * endAngle : PI * 2
 
 <code javascript>
+const { cylinderElliptic } = require('@jscad/modeling').primitives
+
 const myshape = cylinderElliptic({height: 2, startRadius: [10, 5], endRadius: [8, 3]})
 </code>
 
@@ -53,6 +57,8 @@ Defaults:
   * segments : 32
 
 <code javascript>
+const { roundedCylinder } = require('@jscad/modeling').primitives
+
 const myshape = roundedCylinder({radius: 5, height: 10, roundRadius: 0.5})
 const myshape = roundedCylinder({radius: 5, height: 10, roundRadius: 0.5, center: [5, 5, 5], segments: 64})
 </code>

@@ -13,8 +13,10 @@ Defaults:
   * center : [0, 0]
 
 <code javascript>
-const myshape = rectangle({size: [3, 4])
-const myshape = rectangle({size: [3, 4], center: [5, 5])
+const { rectangle } = require('@jscad/modeling').primitives
+
+const myshape = rectangle({size: [3, 4]})
+const myshape = rectangle({size: [3, 4], center: [5, 5]})
 </code>
 
 === Square ===
@@ -28,8 +30,10 @@ Defaults:
   * center : [0, 0]
 
 <code javascript>
-const myshape = square({size: 3)
-const myshape = square({size: 3, center: [5, 5])
+const { square } = require('@jscad/modeling').primitives
+
+const myshape = square({size: 3})
+const myshape = square({size: 3, center: [5, 5]})
 </code>
 
 === Rounded Rectangle ===
@@ -45,6 +49,8 @@ Defaults:
   * segments: 32
 
 <code javascript>
+const { roundedRectangle } = require('@jscad/modeling').primitives
+
 const myshape = roundedRectangle({size: [10, 20], roundRadius: 2})
 const myshape = roundedRectangle({size: [10, 20], roundRadius: 2, center: [5, 5], segments: 64})
 </code>

@@ -14,5 +14,7 @@ Defaults:
   * empty
 
 <code javascript>
+const { polygon } = require('@jscad/modeling').primitives
+
 const myshape = polygon({ points: [ [0,0],[3,0],[3,3] ] })
 </code>
