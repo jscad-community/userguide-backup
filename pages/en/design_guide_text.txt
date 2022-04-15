@@ -1,6 +1,6 @@
 ==== Text ====
 
-Text can be used in designs to create the outline of charaters, which can then be used to create either 2D or 3D shapes.
+Text can be used in designs to create the outline of characters, which can then be used to create either 2D or 3D shapes.
 
 //NOTE: Only the ASCII characters can be used today.//
 
@@ -16,6 +16,8 @@ Defaults:
   * font : 'hershey simplex' (built in)
 
 <code javascript>
+const { vectorChar } = require('@jscad/modeling').text
+
 const outlines = vectorChar('H');
 const outlines = vectorChar({ height: 50 }, 'i');
 </code>
@@ -23,8 +25,10 @@ const outlines = vectorChar({ height: 50 }, 'i');
 The above examples only create the outlines of the character. In order to convert to something useful, the following can be used to convert the outlines (segments) into paths.
 
 <code javascript>
+const { path2 } = require('@jscad/modeling').geometries
+
 const segmentToPath = (segment) => {
-  return geometries.path2.fromPoints({close: false}, segment)
+  return path2.fromPoints({close: false}, segment)
 }
 
 const paths = outlines.segments.map((segment) => segmentToPath(segment))
@@ -47,9 +51,23 @@ Defaults:
   * font : 'hershey simplex' (built in)
 
 <code javascript>
+const { vectorText } = require('@jscad/modeling').text
+
 const outlines = vectorText('JSCAD');
 const outlines = vectorText({ yOffset: -90, height: 10, extrudeOffset: 2, input: 'JSCAD is awesome!' });
 const outlines = vectorText({ height: 25, align: 'right', lineSpacing: 2.2, extrudeOffset: 2 }, 'JSCAD\nRocks!!');
+</code>
+
+Again, you will have to convert the output of `vectorText` into a list of paths before it becomes actually useful:
+
+<code javascript>
+const { path2 } = require('@jscad/modeling').geometries
+
+const segmentToPath = (segment) => {
+  return path2.fromPoints({close: false}, segment)
+}
+
+const paths = outlines.map((segment) => segmentToPath(segment))
 </code>
 
 === Using Other Fonts ===
