@@ -5,12 +5,14 @@
 Convert the given angle (degrees) to radians.
 
 <code javascript>
+const { degToRad } = require('@jscad/modeling').utils
 let radians = degToRad(90) // PI / 2 radians
 </code>
 
 Convert the given angle (radians) to degrees.
 
 <code javascript>
+const { radToDeg } = require('@jscad/modeling').utils
 let degrees = radToDeg(Math.PI / 2) // 90 degrees
 </code>
 
@@ -25,6 +27,8 @@ This function can be used to calculate the appropriate number of segments based 
 Using the above example, the arc has a radius of 3.5 mm (units are typically mm). The laser printer requires 0.1 mm segments or more while moving. The segments can be calculated, and supplied when creating the arc.
 
 <code javascript>
+const { radiusToSegments } = require('@jscad/modeling').utils
+
 let segments = radiusToSegments(3.5, 0.1, 0) /* use minimum length */
 let segments = radiusToSegments(3.5, 0, Math.PI * 2 / 300) /* use minimum angle */ 
 </code>

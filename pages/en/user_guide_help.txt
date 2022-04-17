@@ -2,12 +2,39 @@
 
 Looking for more help?
 
-Try asking questions to other users of JSCAD. We have a growing [[https://openjscad.nodebb.com/ | JSCAD User Group]], and most questions are answered immediately by friends.
+Try asking questions to other users of JSCAD. We have a growing [[https://openjscad.xyz/forum.html | JSCAD User Group]], and most questions are answered immediately by friends. You can also start some conversations on the [[https://openjscad.xyz/discord.html | JSCAD Discord channel]], and discuss interactively with experienced users.
 
 Also, try visiting the [[https://github.com/jscad-community | JSCAD Community]] site at GitHub. There are several projects from users, showing different ways to use JSCAD to create designs.
 
 Not enough? Need some inspiration?
 
-You can find other designs at [[https://www.thingiverse.com/search?q=jscad | Thingiverse]].
+You can find other designs at [[https://www.thingiverse.com/search?q=jscad | Thingiverse]]. The following sites also contain designs of various sorts.
+
+  * [[https://github.com/gilboonet/designs | List of design]] by @gilboonet
+  * [[https://github.com/z3dev/designs | List of designs]] by @z3dev
+  * [[https://github.com/danmarshall/jscad-gallery | List of designs]] by @danmarshall
+  * [[https://github.com/tspspi/jscadmodels | List of designs]] by @tspspi
+  * [[https://github.com/johnwebbcole/jscad-hardware | Nuts and bolts]] by @johnwebbcole
+  * [[https://gitpharm01.github.io/ | My Custom 3D Makes]] by @cid-zhang
 
 And there is a growing list of websites using JSCAD as a component to both create and show designs.
+  * [[https://bitbybit.dev/ | Bit By Bit Developers]]
+  * [[https://paradr.one/ | ParaDrone: AutoPilot for Parachutes]]
+  * [[https://cadhub.xyz/ | Cadhub]]
+  * [[https://www.nametag-designer.com/ | Nametag designer]]
+  * [[https://mod.seblee.me/ | Prusa Face Shield RC3 Modifier]]
+  * [[https://johanlagerloef.com/openvelodrome/ | OpenVelodrome]]
+  * [[https://gen.haxit.org/organizer/ | Interactive Organizer]]
+  * [[https://makecode.buildbee.com/ | BuildBee]]
+
+There are even applications that use JSCAD.
+  * **Rukkou** - Interactive Designs by @samuelwang48, available in the AppStore
+  * [[https://github.com/danmarshall/jscad-now | jscad-now]] - Interactive Viewer by @danmarshall, available via GitHub
+
+You can find JSCAD wrapped inside some excellent libraries as well, which may provide some valuable insights on how to use JSCAD.
+  * VUE framework : https://github.com/z3dev/vue-components
+  * REACT framework : https://github.com/kenianbei/jscad-react
+  * Observable example : https://observablehq.com/@danmarshall/hello-jscad
+  * VSCode viewer : https://github.com/crysislinux/vscode-openjscad
+
+
