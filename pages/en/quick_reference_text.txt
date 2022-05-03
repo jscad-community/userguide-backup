@@ -8,4 +8,4 @@ const { vectorChar, vectorText } = require('@jscad/modeling').text
 
 ^  Function  ^  Notes  ^
 | let vectorCharObject = vectorChar({ xOffset: 10, yOffset: 50, height: 18, input: '!' })  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.vectorChar | API]]  |
-| let vectorCharObject = vectorText({ xOffset: 10, yOffset: 50, height: 18, input: 'line1\nline2' })  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.vectorText | API]]  |
+| let arrayOfSegments = vectorText({ xOffset: 10, yOffset: 50, height: 18, input: 'line1\nline2' })  | [[https://www.openjscad.xyz/docs/module-modeling_transforms.html#.vectorText | API]]  |

@@ -11,7 +11,7 @@ The two dimensional shape is extruded to the ''height'', upwards along the Z axi
 Defaults:
   * height : 1
   * twist : 0
-  * twistSteps : 1 
+  * twistSteps : 1 (Note: Increasing the value of twistSteps improves the overall shape.)
 
 <code javascript>
 const { extrudeLinear } = require('@jscad/modeling').extrusions
