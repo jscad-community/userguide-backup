@@ -2,6 +2,8 @@
 
 Extruding a two dimensional shape into a three dimensional shape can be performed in various ways. In each extrusion process, a continuous three dimensional shape is formed with a constant cross section similar to that of the two dimensional shape.
 
+//NOTE: In order for extrusions to produce correct shapes, the initial two dimensional shape must have the proper orientation. See [[en:math_guide_orientation|Orientation]] below.//
+
 {{page>design_guide_linear_extrude}}
 
 {{page>design_guide_rectangular_extrude}}

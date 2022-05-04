@@ -18,7 +18,7 @@ const { cube, ellipse, star } = require('@jscad/modeling').primitives
 | const myshape = square({center: [6.5, 6.5], size: 10})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.square | API]]  |
 | const myshape = star({vertices: 8, outerRadius: 10}) /* star with 8/2 density */  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.star | API]]  |
 | const myshape = star({vertices: 12, outerRadius: 40, innerRadius: 20}) /* star with given radius */  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.star | API]]  |
-
+| const myshape = triangle({type: 'AAS', values: [degToRad(62), degToRad(35), 7]})  | [[https://www.openjscad.xyz/docs/module-modeling_primitives.html#.triangle | API]]  |
 
 ==== 3D Primitives ====
 ^  Primitive  ^  Notes  ^

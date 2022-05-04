@@ -10,7 +10,7 @@ Not enough? Need some inspiration?
 
 You can find other designs at [[https://www.thingiverse.com/search?q=jscad | Thingiverse]]. The following sites also contain designs of various sorts.
 
-  * [[https://github.com/gilboonet/designs | List of design]] by @gilboonet
+  * [[https://github.com/gilboonet/designs | List of designs]] by @gilboonet
   * [[https://github.com/z3dev/designs | List of designs]] by @z3dev
   * [[https://github.com/danmarshall/jscad-gallery | List of designs]] by @danmarshall
   * [[https://github.com/tspspi/jscadmodels | List of designs]] by @tspspi
