@@ -6,7 +6,19 @@ Sometimes the measurements of a shape can assist when creating a design. This is
 
 Measuring the area of a shape is possible, for both 2D and 3D shapes.
 
+<code javascript>
+let area = measureArea(sphere())
+</code>
+
 //Note: The area for a path is always zero(0) as paths are infinitely thin.//
+
+In addition, the total (aggregate) area for the given geometries can be measured.
+
+<code javascript>
+let totalArea = measureAggregateArea(sphere(),cube())
+</code>
+
+//Note: This measurement will not account for overlapping geometry.//
 
 === Bounding Box ===
 
