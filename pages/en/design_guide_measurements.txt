@@ -2,6 +2,10 @@
 
 Sometimes the measurements of a shape can assist when creating a design. This is especially true for shapes imported from external formats.
 
+<code javascript>
+const { measureArea, measureBoundingBox, measureVolume } = require('@jscad/modeling').measurements
+</code>
+
 === Area ===
 
 Measuring the area of a shape is possible, for both 2D and 3D shapes.
@@ -24,15 +28,33 @@ let totalArea = measureAggregateArea(sphere(),cube())
 
 Measuring the bounding box (min and max bounds) of a shape is possible.
 
-The getBounds function can be used to retrieve the bounding box of an object, returning an array with two points specifying the minimum and maximum coordinates, i.e. X, Y, Z values.
+The measureBoundingBox function can be used to retrieve the bounding box of an object, returning an array with two points specifying the minimum and maximum coordinates, i.e. X, Y, Z values.
+
+<code javascript>
+let bounds = measureBoundingBox(sphere())
+</code>
+
+In addition, the total (aggregate) bounding box for the given geometries can be measured.
+
+<code javascript>
+let totalBounds = measureAggregateBoundingBox(sphere(),cube())
+</code>
 
 === Bounding Sphere ===
 
 Measuring the (approximate) bounding sphere of a shape is possible.
 
+<code javascript>
+let bounds = measureBoundingSphere(cube())
+</code>
+
 === Center ===
 
 Measuring the center of a shape is possible.
+
+<code javascript>
+let center = measureCenter(sphere())
+</code>
 
 //Note: This is equivalent to the center of the bounding box.//
 
@@ -40,11 +62,19 @@ Measuring the center of a shape is possible.
 
 Measuring the center of mass of a shape is possible.
 
+<code javascript>
+let center = measureCenterOfMass(sphere())
+</code>
+
 //Note: The center of mass for a path is always zero(0) as paths are infinitely thin.//
 
 === Dimensions ===
 
-Measuring the dimensions of a shape is possible.
+Measuring the dimensions of a shape is possible, i.e. width, depth, and height of a shape.
+
+<code javascript>
+let dimensions = measureDimensions(sphere())
+</code>
 
 //Note: This is the equivalent width, depth, height of the bounding box.//
 
@@ -52,8 +82,33 @@ Measuring the dimensions of a shape is possible.
 
 Measuring the epsilon of shapes is possible. Epsilon values are used in various functions to determine minimum distances between points, planes, etc.
 
+<code javascript>
+let epsilon = measureEpsilon(sphere())
+</code>
+
+In addition, the combined epsilon for a group geometries can be measured.
+
+<code javascript>
+let groupEpsilon = measureAggregateEpsilon(sphere(),cube())
+</code>
+
 === Volume ===
 
 Measuring the volume of a shape is possible.
 
+<code javascript>
+let volume = measureVolume(sphere())
+</code>
+
 //Note: The volume of 2D shapes is always zero(0).//
+
+In addition, the total (aggregate) volume for the given geometries can be measured.
+
+<code javascript>
+let totalVolume = measureAggregateVolume(sphere(),cube())
+</code>
+
+//Note: This measurement will not account for overlapping geometry.//
+
+
+
