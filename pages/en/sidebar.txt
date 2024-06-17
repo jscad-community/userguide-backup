@@ -12,7 +12,7 @@
 [[start|User Guide]]
   * [[user_guide_website|Website]]
   * [[user_guide_formats|Supported File Formats]]
-  * [[user_guide_help|More Help]]
+  * [[user_guide_help|More Designs and Websites]]
 
 [[jscad_design_guide|Design Guide]]
   * [[design_guide_anatomy|Anatomy of A Design]]

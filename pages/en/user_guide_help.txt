@@ -1,4 +1,4 @@
-====== More Help ======
+====== More Designs and Websites ======
 
 Looking for more help?
 
@@ -16,6 +16,7 @@ You can find other designs at [[https://www.thingiverse.com/search?q=jscad | Thi
   * [[https://github.com/tspspi/jscadmodels | List of designs]] by @tspspi
   * [[https://github.com/johnwebbcole/jscad-hardware | Nuts and bolts]] by @johnwebbcole
   * [[https://gitpharm01.github.io/ | My Custom 3D Makes]] by @cid-zhang
+  * [[https://github.com/receter/jscad-threadlib | JSCAD threadlib]] by @receter
 
 And there is a growing list of websites using JSCAD as a component to both create and show designs.
   * [[https://bitbybit.dev/ | Bit By Bit Developers]]
