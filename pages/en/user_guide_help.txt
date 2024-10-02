@@ -27,6 +27,7 @@ And there is a growing list of websites using JSCAD as a component to both creat
   * [[https://johanlagerloef.com/openvelodrome/ | OpenVelodrome]]
   * [[https://gen.haxit.org/organizer/ | Interactive Organizer]]
   * [[https://makecode.buildbee.com/ | BuildBee]]
+  * [[https://rcplanediy.com/ | RC Wing Design Tool]]
 
 There are even applications that use JSCAD.
   * **Rukkou** - Interactive Designs by @samuelwang48, available in the AppStore
